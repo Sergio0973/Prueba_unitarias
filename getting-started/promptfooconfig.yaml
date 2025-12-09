@@ -1,4 +1,4 @@
-# yaml-language-server: $schema=https://promptfoo.dev/config-schema.json
+﻿# yaml-language-server: $schema=https://promptfoo.dev/config-schema.json
 description: 'Getting started'
 # Optionally set API keys here instead of exporting environment variables.
 # Never commit real keys to source control.
@@ -6,22 +6,20 @@ env:
   GEMINI_API_KEY: AIzaSyAwHzzjc1LI1CsD4wLH7x9C_xlXXFu-PyI
 
 prompts:
-  - 'Convert this English to {{language}}: {{input}}'
-  - 'Translate to {{language}}: {{input}}'
+  - "../30 Promp Arreglados.txt"
 
 providers:
-  - "google:gemini-2.5-pro"
+  - google:gemini-2.5-pro
+  # Add more models if you want to compare:
+  # - openai:gpt-4.1-mini
+  # - anthropic:claude-3-haiku
 
 tests:
   - vars:
-      language: French
-      input: Hello world
-    assert:
-      - type: contains
-        value: 'Bonjour le monde'
+      input: "Hello world"
+      language: "French"
+
   - vars:
-      language: Spanish
-      input: Where is the library?
-    assert:
-      - type: icontains
-        value: 'Dónde está la biblioteca'
+      input: "Where is the library?"
+      language: "Spanish"
+

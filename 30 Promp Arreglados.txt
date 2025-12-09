@@ -1,0 +1,2317 @@
+﻿
+# PROMP 1 â€” Expresiones vs Declaraciones
+
+## InstrucciÃ³n:
+Quiero que actÃºes como un docente de programaciÃ³n especializado en JavaScript para estudiantes entre 17 y 24 aÃ±os. Tu funciÃ³n serÃ¡ explicarme conceptos que aÃºn no entiendo, de una forma pedagÃ³gica, clara y estructurada. No quiero definiciones simples: quiero que desarrolles la explicaciÃ³n con profundidad, usando ejemplos reales, narrativa educativa y casos de estudio. AdemÃ¡s, cada vez que yo te dÃ© un concepto como entrada, quiero que lo transformes en una clase completa, incorporando teorÃ­a, aplicaciÃ³n prÃ¡ctica, un ejemplo codificable y una explicaciÃ³n lÃ­nea por lÃ­nea. Necesito que expliques por quÃ© funciona asÃ­, cÃ³mo se aplica y quÃ© errores tÃ­picos comete un estudiante principiante.
+
+## Contexto:
+Soy un estudiante que estÃ¡ aprendiendo JavaScript desde lo mÃ¡s bÃ¡sico. Muchas veces escribo cÃ³digo que funciona, pero no comprendo exactamente quÃ© estoy escribiendo: si es una expresiÃ³n, una declaraciÃ³n o ambas cosas. Esto me genera confusiÃ³n cuando trato de leer cÃ³digo de otros o cuando intento entender por quÃ© JavaScript evalÃºa ciertas lÃ­neas y otras no. Quiero aprender de forma profunda quÃ© diferencia a una expresiÃ³n de una declaraciÃ³n, cuÃ¡ndo se usa cada una y cÃ³mo reconocerlas sin dudar. Me interesa comprenderlo para escribir mejor cÃ³digo y tener claridad mental al programar.
+
+## Entrada:
+ExplÃ­came a nivel de caso de estudio la diferencia entre una expresiÃ³n y una declaraciÃ³n en JavaScript.
+
+## Salida:
+Quiero que me des una explicaciÃ³n pedagÃ³gica con teorÃ­a clara, un caso de estudio, un ejemplo codificable y una explicaciÃ³n lÃ­nea por lÃ­nea de ese ejemplo, ademÃ¡s de advertencias tÃ­picas que un estudiante suele confundir.
+
+## Ejemplo:
+```js
+let precioProducto = 20;
+let cantidad = 3;
+let total = precioProducto * cantidad;
+console.log("El total a pagar es: " + total);
+```
+
+### ExplicaciÃ³n del ejemplo
+
+1. `let precioProducto = 20;`
+   - Esta lÃ­nea es una declaraciÃ³n: se crea la variable `precioProducto`.
+   - El valor `20` es una expresiÃ³n, porque produce un valor numÃ©rico.
+
+2. `let cantidad = 3;`
+   - De nuevo, la lÃ­nea completa es una declaraciÃ³n.
+   - El nÃºmero `3` es una expresiÃ³n.
+
+3. `let total = precioProducto * cantidad;`
+   - Toda la lÃ­nea es una declaraciÃ³n, porque define la variable `total`.
+   - La parte `precioProducto * cantidad` es una expresiÃ³n aritmÃ©tica que produce un valor.
+
+4. `console.log("El total a pagar es: " + total);`
+   - Esta lÃ­nea es una expresiÃ³n que llama a una funciÃ³n.
+   - Dentro, `"El total a pagar es: " + total` es una expresiÃ³n de concatenaciÃ³n.
+
+---
+
+# PROMP 2 â€” Precedencia de Operadores
+
+InstrucciÃ³n:
+
+ActÃºa como docente experto explicando cÃ³mo JavaScript decide el orden de evaluaciÃ³n en una expresiÃ³n. Usa ejemplos, teorÃ­a y anÃ¡lisis detallado.
+
+Contexto:
+
+A veces obtengo resultados inesperados en operaciones matemÃ¡ticas, y me doy cuenta de que no entiendo cÃ³mo JavaScript decide quÃ© resolver primero. Necesito claridad total en este tema.
+
+Entrada:
+
+ExplÃ­came cÃ³mo funciona la precedencia de operadores en JavaScript.
+
+Salida:
+
+TeorÃ­a extensa + ejemplo + anÃ¡lisis detallado + errores comunes.
+
+Ejemplo:
+
+## Ejemplo:
+```js
+let a = 6 + 2 * 5;
+let b = (6 + 2) * 5;
+let c = 20 / 2 ** 2;
+console.log(a, b, c);
+
+```
+
+## ExplicaciÃ³n:
+
+2 * 5 se ejecuta primero â†’ 6 + 10 = 16.
+
+(6 + 2) se ejecuta primero â†’ 8 * 5 = 40.
+
+2 ** 2 = 4 y luego 20 / 4 = 5.
+
+
+# PROMP 3 â€” Tipos de Datos Primitivos
+---
+InstrucciÃ³n
+
+Quiero que actÃºes como un docente experto en programaciÃ³n, con una gran habilidad para enseÃ±ar conceptos desde cero a estudiantes jÃ³venes. Tu objetivo serÃ¡ explicar de manera profunda, tÃ©cnica y altamente pedagÃ³gica el funcionamiento de los tipos de datos primitivos en JavaScript, incluyendo su importancia, su papel dentro del lenguaje, sus caracterÃ­sticas fundamentales y sus comportamientos mÃ¡s complejos.
+Necesito que seas claro pero a la vez profundo, conectando teorÃ­a con prÃ¡ctica, mostrando cÃ³mo estos tipos funcionan internamente en el motor de JavaScript, e ilustrando cada concepto con un ejemplo codificable.
+Tu explicaciÃ³n deberÃ¡ incluir: teorÃ­a extendida, anÃ¡lisis conceptual, ejemplos reales, explicaciones lÃ­nea por lÃ­nea, errores comunes que cometen los estudiantes y un caso aplicado que muestre por quÃ© entender los tipos primitivos es esencial para cualquier desarrollador JavaScript.
+
+Contexto
+
+Soy un estudiante de JavaScript que estÃ¡ construyendo mis primeras bases en programaciÃ³n. Aunque ya sÃ© escribir variables y usar nÃºmeros y textos, me he dado cuenta de que no entiendo realmente quÃ© es un tipo primitivo. He visto palabras como string, number, boolean, undefined, null, symbol, bigint, pero sinceramente solo las memorizo sin comprenderlas.
+Esto me genera problemas: comparaciones que no funcionan, operaciones matemÃ¡ticas que se rompen, valores que no cambian como espero y errores que no sÃ© interpretar. Por ejemplo, me confunde muchÃ­simo que null sea un valor primitivo pero que typeof null diga "object". TambiÃ©n me confunde que un string sea "inmutable", o por quÃ© existen BigInt y Symbol en primer lugar.
+Siento que mis bases no son sÃ³lidas, y no quiero avanzar sin realmente entender estos fundamentos. Necesito una explicaciÃ³n profunda, clara y tÃ©cnica, como si un profesor experto me lo explicara pacientemente desde cero hasta un nivel profesional.
+
+Entrada
+
+ExplÃ­came quÃ© son los tipos de datos primitivos en JavaScript a nivel tÃ©cnico, pedagÃ³gico y con ejemplos detallados.
+
+Salida
+
+Quiero una explicaciÃ³n muy extensa que incluya:
+
+Una definiciÃ³n profunda de quÃ© es un tipo primitivo.
+
+Una explicaciÃ³n completa de los 7 primitivos de JavaScript.
+
+Razones tÃ©cnicas por las que son inmutables.
+
+Ejemplo codificable creado desde cero.
+
+ExplicaciÃ³n lÃ­nea por lÃ­nea del ejemplo.
+
+Advertencias y errores tÃ­picos de estudiantes.
+
+Un caso de estudio que demuestre por quÃ© dominar los tipos primitivos es esencial.
+
+
+```js
+let nombre = "Sergio";
+let edad = 22;
+let registrado = true;
+let telefono = null;
+let direccion;
+let claveUnica = Symbol("user_id");
+let numeroGrande = 928374982374982374n;
+
+console.log(typeof nombre);
+console.log(typeof edad);
+console.log(typeof registrado);
+console.log(typeof telefono);
+console.log(typeof direccion);
+console.log(typeof claveUnica);
+console.log(typeof numeroGrande);
+
+```
+
+ExplicaciÃ³n LÃ­nea por LÃ­nea
+let nombre = "Sergio";
+
+Esto es un string, un tipo primitivo destinado a representar texto.
+
+Los strings en JS son inmutables, lo que significa que no puedes modificar un carÃ¡cter directamente.
+
+Internamente, JavaScript gestiona los strings como valores fijos en memoria.
+
+let edad = 22;
+
+Esto es un number.
+
+En JavaScript todos los nÃºmeros (enteros, decimales, negativos) comparten el mismo tipo.
+
+No existe int, float, double: todo es number.
+
+let registrado = true;
+
+Esto es un boolean, utilizado para decisiones lÃ³gicas.
+
+Solo existen dos valores: true y false.
+
+let telefono = null;
+
+Representa una ausencia INTENCIONAL de valor.
+
+Aunque es primitivo, tiene un error histÃ³rico:
+typeof null devuelve "object" por un bug del lenguaje.
+
+let direccion;
+
+Si no asignas un valor, JavaScript coloca automÃ¡ticamente undefined.
+
+Significa â€œausencia NO intencionalâ€.
+
+let claveUnica = Symbol("user_id");
+
+Cada Symbol es Ãºnico, incluso si dos Symbols tienen la misma descripciÃ³n.
+
+Se utiliza para crear claves privadas o identificadores que no colisionan.
+
+let numeroGrande = 928374982374982374n;
+
+Este es un BigInt, un tipo diseÃ±ado para nÃºmeros gigantes que exceden el lÃ­mite de seguridad de Number.
+
+Se identifica por la letra n al final del nÃºmero.
+
+# PROMP 4 â€” ConversiÃ³n de Tipos 
+---
+InstrucciÃ³n
+
+ActÃºa como un docente experto en JavaScript que explica de manera profunda cÃ³mo funcionan las conversiones de tipo en el lenguaje. Debes unir teorÃ­a, prÃ¡ctica, explicaciÃ³n tÃ©cnica, ejemplos, casos reales y anÃ¡lisis de errores comunes.
+Tu explicaciÃ³n debe cubrir:
+
+ConversiÃ³n implÃ­cita
+
+ConversiÃ³n explÃ­cita
+
+ToString
+
+ToNumber
+
+ToBoolean
+
+CoerciÃ³n peligrosa
+
+Comparaciones con == y ===
+
+Ejemplos explicados paso a paso
+
+Casos de uso reales en formularios, APIs y lÃ³gica de control
+Quiero una explicaciÃ³n profesional pero entendible.
+
+
+Contexto
+
+Soy un estudiante de JS y constantemente me encuentro con resultados que no comprendo. Por ejemplo:
+
+"10" + 5 devuelve "105"
+
+"10" - 5 devuelve 5
+
+Boolean("0") devuelve true
+
+Number("hola") devuelve NaN
+
+Y no sÃ© por quÃ©.
+Esto me frustra porque me hace sentir que JS es impredecible, cuando realmente soy yo quien no entiende sus reglas internas.
+SÃ© que la conversiÃ³n de tipos es una de las partes mÃ¡s importantes del lenguaje, y si no la entiendo, voy a seguir cometiendo errores.
+
+Entrada
+
+ExplÃ­came de forma profunda cÃ³mo funciona la conversiÃ³n de tipos en JavaScript con teorÃ­a, ejemplos y anÃ¡lisis detallado.
+
+Salida
+
+Quiero una explicaciÃ³n muy extensa que incluya:
+
+TeorÃ­a
+
+ConversiÃ³n implÃ­cita vs explÃ­cita
+
+Reglas internas de JS
+
+Ejemplo claro
+
+ExplicaciÃ³n lÃ­nea por lÃ­nea
+
+Advertencias
+
+Errores tÃ­picos
+
+Un caso de estudio real
+
+```js
+let valor = "25";
+let valorNumerico = Number(valor);
+let suma = valor + 10;
+let resta = valor - 10;
+let booleano = Boolean("0");
+let invalido = Number("hola");
+
+console.log(valorNumerico, suma, resta, booleano, invalido);
+
+```
+
+ExplicaciÃ³n LÃ­nea por LÃ­nea
+let valor = "25";
+
+Literalmente un string, aunque representa un nÃºmero.
+
+let valorNumerico = Number(valor);
+
+ConversiÃ³n explÃ­cita.
+
+Fuerza a JS a transformar "25" â†’ 25.
+
+let suma = valor + 10;
+
+El operador + prioriza strings.
+
+JS convierte 10 en "10" â†’ "25" + "10" â†’ "2510".
+
+let resta = valor - 10;
+
+El operador - solo funciona con nÃºmeros.
+
+JS convierte "25" a 25 automÃ¡ticamente.
+
+Resultado: 15.
+
+let booleano = Boolean("0");
+
+"0" es un string NO vacÃ­o.
+
+Resultado: true.
+
+let invalido = Number("hola");
+
+No puede convertirse a nÃºmero
+
+Resultado: NaN (Not a Number)
+
+# PROMP 5 â€” typeof 
+---
+InstrucciÃ³n
+
+Quiero que actÃºes como un docente experto en JavaScript, capaz de explicar profundamente cÃ³mo funciona el operador typeof, sus limitaciones, sus casos especiales y su importancia real dentro del lenguaje. Tu explicaciÃ³n debe incluir teorÃ­a detallada, ejemplo codificable, anÃ¡lisis lÃ­nea por lÃ­nea, errores comunes, advertencias importantes y un caso de estudio que muestre por quÃ© typeof puede generar confusiÃ³n incluso en programadores avanzados.
+Debes explicar por quÃ© a veces typeof devuelve resultados inesperados, por quÃ© ciertos tipos primitivos son difÃ­ciles de detectar y cÃ³mo se debe usar correctamente en situaciones reales.
+
+Contexto
+
+Soy un estudiante de JavaScript y he usado typeof desde mis primeros ejercicios, pero muchas veces me encuentro con resultados que simplemente no entiendo. Por ejemplo, Â¿por quÃ© typeof null devuelve "object" si null es un tipo primitivo? Â¿Por quÃ© un array tambiÃ©n devuelve "object" si claramente no es lo mismo que un objeto normal?
+Todo esto me genera dudas fuertes sobre cÃ³mo JavaScript representa los datos por dentro y cÃ³mo funciona realmente su sistema de tipos. Siento que typeof deberÃ­a ser una herramienta sencilla, pero en la prÃ¡ctica me doy cuenta de que tiene comportamientos extraÃ±os que necesito comprender de forma profunda.
+
+Entrada
+
+ExplÃ­came cÃ³mo funciona el operador typeof en JavaScript de forma extensa, profunda y pedagÃ³gica.
+
+
+Salida
+
+Quiero una explicaciÃ³n amplia que incluya:
+
+TeorÃ­a clara
+
+Por quÃ© existen errores histÃ³ricos
+
+Ejemplo codificable
+
+AnÃ¡lisis lÃ­nea por lÃ­nea
+
+Limitaciones del operador
+
+QuÃ© detectar y quÃ© NO detectar con typeof
+
+Caso de estudio y errores comunes
+
+
+ ```js
+console.log(typeof 42);
+console.log(typeof "Hola mundo");
+console.log(typeof true);
+console.log(typeof undefined);
+console.log(typeof null);
+console.log(typeof {});
+console.log(typeof []);
+console.log(typeof function saludar(){});
+console.log(typeof 9007199254740991n);
+console.log(typeof Symbol("clave"));
+
+```
+
+ExplicaciÃ³n LÃ­nea por LÃ­nea
+typeof 42
+
+Devuelve "number".
+
+Todos los nÃºmeros, enteros o decimales, son del tipo number.
+
+typeof "Hola mundo"
+
+Devuelve "string".
+
+Cualquier texto, incluso vacÃ­o, es de tipo string.
+
+typeof true
+
+Devuelve "boolean".
+
+typeof undefined
+
+Devuelve "undefined".
+
+Es el Ãºnico valor cuyo typeof coincide 1:1 con su nombre.
+
+typeof null
+
+Devuelve "object".
+
+Este es un error histÃ³rico que jamÃ¡s fue corregido por compatibilidad.
+
+null NO es un objeto, es un primitivo que representa ausencia intencional.
+
+typeof {}
+
+Devuelve "object".
+
+Correcto: un objeto literal es un objeto.
+
+typeof []
+
+Devuelve "object".
+
+typeof NO PUEDE detectar arrays.
+
+Debemos usar:
+
+ ```js
+
+Array.isArray([])
+
+```
+
+typeof function saludar(){}
+
+Devuelve "function".
+
+Este es un caso especial: aunque tÃ©cnicamente las funciones son objetos, typeof las reconoce con un subtipo Ãºnico.
+
+typeof 9007199254740991n
+
+Devuelve "bigint".
+
+typeof Symbol("clave")
+
+Devuelve "symbol".
+
+# PROMP 6 â€” Operadores AritmÃ©ticos  
+---
+InstrucciÃ³n
+
+ActÃºa como un docente experto en programaciÃ³n y explÃ­came profundamente cÃ³mo funcionan los operadores aritmÃ©ticos en JavaScript.
+Debes desarrollar la explicaciÃ³n con teorÃ­a detallada, ejemplos codificables, anÃ¡lisis lÃ­nea por lÃ­nea, advertencias, notas especiales y un caso real donde estos operadores afectan cÃ¡lculos importantes como precios, porcentajes o totales.
+Quiero que expliques cada operador aritmÃ©tico: suma, resta, multiplicaciÃ³n, divisiÃ³n, mÃ³dulo y exponentes.
+
+Contexto
+
+Estoy aprendiendo JavaScript y aunque creo entender la suma y la resta, aÃºn me cuesta visualizar cÃ³mo funcionan la divisiÃ³n, el mÃ³dulo y la exponenciaciÃ³n dentro del lenguaje.
+He visto operaciones que dan resultados inesperados (como divisiones con decimales extraÃ±os), y a veces no sÃ© por quÃ© el operador % devuelve el residuo o por quÃ© el operador ** es preferible a otros mÃ©todos.
+Necesito entender estos operadores a profundidad, ya que son fundamentales en cÃ¡lculos reales: precios finales, impuestos, porcentajes, conversiones, operaciones matemÃ¡ticas bÃ¡sicas y lÃ³gicas de juegos o aplicaciones.
+
+Entrada
+
+ExplÃ­came detalladamente cÃ³mo funcionan los operadores aritmÃ©ticos en JavaScript.
+
+Salida
+
+Quiero una explicaciÃ³n extensa que incluya:
+
+TeorÃ­a detallada
+
+Ejemplo codificable creado desde cero
+
+ExplicaciÃ³n lÃ­nea por lÃ­nea
+
+Errores comunes
+
+Notas especiales
+
+Aplicaciones reales
+
+ ```js
+let suma = 12 + 8;
+let resta = 20 - 6;
+let multiplicacion = 7 * 4;
+let division = 25 / 4;
+let residuo = 25 % 4;
+let potencia = 3 ** 4;
+
+console.log(suma, resta, multiplicacion, division, residuo, potencia);
+
+
+```
+
+
+ExplicaciÃ³n LÃ­nea por LÃ­nea
+let suma = 12 + 8;
+
+Operador + â†’ suma.
+
+Resultado â†’ 20.
+
+let resta = 20 - 6;
+
+Operador - â†’ resta.
+
+Resultado â†’ 14.
+
+let multiplicacion = 7 * 4;
+
+Operador * â†’ multiplicaciÃ³n.
+
+Resultado â†’ 28.
+
+let division = 25 / 4;
+
+Operador / â†’ divisiÃ³n.
+
+Resultado â†’ 6.25.
+
+JS siempre devuelve nÃºmeros flotantes si corresponde.
+
+let residuo = 25 % 4;
+
+Operador % â†’ residuo o mÃ³dulo.
+
+25 / 4 = 6 con residuo 1.
+
+let potencia = 3 ** 4;
+
+3 ** 4 es 3 * 3 * 3 * 3.
+
+Resultado â†’ 81.
+
+
+# PROMP 7 â€” Operadores LÃ³gicos 
+---
+InstrucciÃ³n
+
+Quiero que actÃºes como un docente experto en JavaScript, con dominio absoluto de la lÃ³gica booleana y de cÃ³mo funciona el sistema de truthy y falsy en el lenguaje. Debes explicarme profundamente los operadores lÃ³gicos: AND (&&), OR (||) y NOT (!), cubriendo teorÃ­a, aplicaciones reales, ejemplos codificables, anÃ¡lisis lÃ­nea por lÃ­nea, advertencias, errores comunes y situaciones en las que los operadores lÃ³gicos no funcionan como un principiante esperarÃ­a.
+Tu explicaciÃ³n debe mostrar tanto el uso de estos operadores para evaluar condiciones como su comportamiento especial cuando se utilizan con valores no booleanos.
+
+Contexto
+
+Como estudiante de JavaScript, entiendo de manera superficial que los operadores lÃ³gicos sirven para trabajar con condiciones. Pero cuando empiezo a escribir cÃ³digo real, me doy cuenta de que no entiendo verdaderamente cÃ³mo funcionan.
+Por ejemplo:
+
+No sÃ© por quÃ© true && false es false.
+
+No entiendo cÃ³mo "" || "Hola" devuelve "Hola".
+
+Me confunde que 0 && "x" dÃ© 0 en lugar de "x".
+
+No entiendo por quÃ© !"texto" da false.
+Siento que estoy usando estos operadores de memoria, sin entenderlos. Necesito una explicaciÃ³n profunda que me dÃ© seguridad para trabajar con condiciones, formularios, validaciones y lÃ³gica de aplicaciones.
+
+Entrada
+
+ExplÃ­came profundamente cÃ³mo funcionan los operadores lÃ³gicos en JavaScript, teorÃ­a y anÃ¡lisis detallado.
+
+Salida
+
+Quiero una explicaciÃ³n extensa que incluya:
+
+TeorÃ­a completa
+
+Valores truthy y falsy
+
+Ejemplo creado desde cero
+
+ExplicaciÃ³n lÃ­nea por lÃ­nea
+
+Advertencias clave
+
+Errores comunes de estudiantes
+
+Caso de estudio aplicado
+
+
+ ```js
+let resultadoAND = true && "JavaScript";
+let resultadoOR = "" || "Valor alternativo";
+let resultadoNOT = !0;
+let mezcla = 5 && 0 && "Hola";
+let cortoCircuito = null || false || "Activo";
+
+console.log(resultadoAND, resultadoOR, resultadoNOT, mezcla, cortoCircuito);
+
+```
+
+ExplicaciÃ³n LÃ­nea por LÃ­nea
+let resultadoAND = true && "JavaScript";
+
+El operador AND (&&) devuelve el primer valor falsy, o si todos son truthy, devuelve el Ãºltimo.
+
+true es truthy â†’ entonces devuelve "JavaScript".
+
+Resultado: "JavaScript".
+
+let resultadoOR = "" || "Valor alternativo";
+
+El operador OR (||) devuelve el primer valor truthy.
+
+"" es falsy â†’ entonces se salta.
+
+"Valor alternativo" es truthy â†’ resultado final.
+
+let resultadoNOT = !0;
+
+0 es falsy.
+
+!0 â†’ true.
+
+let mezcla = 5 && 0 && "Hola";
+
+Se evalÃºa de izquierda a derecha.
+
+5 es truthy â†’ pasa.
+
+0 es falsy â†’ se detiene allÃ­.
+
+Resultado: 0.
+
+let cortoCircuito = null || false || "Activo";
+
+null â†’ falsy
+
+false â†’ falsy
+
+"Activo" â†’ truthy â†’ resultado "Activo"
+
+Valores Truthy y Falsy
+Falsy:
+
+0
+
+"" (cadena vacÃ­a)
+
+null
+
+undefined
+
+false
+
+Truthy:
+
+Todo lo que NO sea falsy.
+
+Ejemplo: "0" es truthy, "false" es truthy, {} es truthy.
+
+# PROMP 8 â€” Operadores de ComparaciÃ³n 
+---
+InstrucciÃ³n
+
+Quiero que actÃºes como un profesor de JavaScript con un dominio profundo de cÃ³mo funciona la comparaciÃ³n en el lenguaje. Debes explicarme la diferencia entre comparaciÃ³n dÃ©bil (==) y comparaciÃ³n estricta (===), asÃ­ como los operadores >, <, >=, <=, !=, !==, incluyendo casos especiales, conversiÃ³n implÃ­cita, errores comunes y ejemplos claros.
+Necesito una explicaciÃ³n extensa y pedagÃ³gica para comprender realmente cuÃ¡ndo usar cada operador y por quÃ© la comparaciÃ³n estricta es mÃ¡s segura.
+
+Contexto
+
+Estoy aprendiendo JavaScript, pero constantemente me confundo con las comparaciones. No entiendo por quÃ©:
+
+5 == "5" es true
+
+null == undefined tambiÃ©n es true
+
+false == 0 es true
+
+pero luego false === 0 es false
+Todo esto me parece muy extraÃ±o.
+Me doy cuenta de que JavaScript hace conversiones internas cuando uso ==, y eso me causa resultados inesperados. Necesito entender quÃ© pasa exactamente dentro del lenguaje y cÃ³mo comparar valores correctamente sin depender de la intuiciÃ³n.
+
+Entrada
+
+ExplÃ­came profundamente cÃ³mo funcionan los operadores de comparaciÃ³n en JavaScript, incluyendo la diferencia entre comparaciÃ³n dÃ©bil y estricta.
+
+Salida
+
+Quiero una explicaciÃ³n completa con:
+
+TeorÃ­a detallada
+
+ComparaciÃ³n dÃ©bil vs estricta
+
+Tabla de conversiÃ³n implÃ­cita
+
+Ejemplo codificable
+
+ExplicaciÃ³n lÃ­nea por lÃ­nea
+
+Advertencias y errores comunes
+
+Casos especiales
+
+Caso prÃ¡ctico
+
+ ```js
+let comparacion1 = 5 == "5";
+let comparacion2 = 5 === "5";
+let comparacion3 = null == undefined;
+let comparacion4 = null === undefined;
+let comparacion5 = false == 0;
+let comparacion6 = false === 0;
+
+console.log(comparacion1, comparacion2, comparacion3, comparacion4, comparacion5, comparacion6);
+
+
+```
+
+ExplicaciÃ³n LÃ­nea por LÃ­nea
+5 == "5"
+
+El operador == convierte ambos valores al mismo tipo.
+
+"5" se convierte a nÃºmero.
+
+Resultado: true.
+
+5 === "5"
+
+Compara tipo + valor.
+
+Los tipos difieren â†’ false.
+
+null == undefined
+
+Regla especial del lenguaje.
+
+Son iguales solo con ==.
+
+Resultado: true.
+
+null === undefined
+
+Tipos distintos â†’ false.
+
+false == 0
+
+JS convierte false a nÃºmero â†’ 0
+
+0 == 0 â†’ true
+
+false === 0
+
+Tipos diferentes â†’ false.
+
+# PROMP 9 â€” Variables 
+---
+InstrucciÃ³n
+
+Quiero que actÃºes como un docente experto en JavaScript y me expliques con absoluta profundidad, claridad y estructura la diferencia entre las tres formas de declarar variables: var, let y const. Tu explicaciÃ³n debe profundizar en temas como scope (alcance), hoisting, reasignaciÃ³n, redeclaraciÃ³n, temporal dead zone, caracterÃ­sticas internas, casos de uso, buenas prÃ¡cticas modernas y peligros comunes.
+Necesito que desarrolles una explicaciÃ³n que no solo diga quÃ© hace cada una, sino por quÃ© existen, cÃ³mo funcionan internamente en el motor de JavaScript y cÃ³mo afectan el comportamiento del cÃ³digo en situaciones reales.
+
+Contexto
+
+Soy un estudiante aprendiendo JavaScript y todavÃ­a me confunde entender cuÃ¡ndo debo usar var, let o const. He visto que algunas personas dicen que var es â€œpeligrosoâ€, pero no sÃ© por quÃ©. TambiÃ©n he escuchado tÃ©rminos como â€œhoistingâ€, â€œscope de funciÃ³nâ€, â€œscope de bloqueâ€, â€œtemporal dead zoneâ€, pero no los comprendo.
+Cuando intento escribir cÃ³digo, uso lo que sea que recuerdo sin saber realmente cuÃ¡l es la opciÃ³n correcta. Esto me genera errores, comportamientos inesperados y dudas al leer cÃ³digo de otros desarrolladores.
+Quiero una explicaciÃ³n extensa, profunda y profesional que me deje claro cÃ³mo funcionan estas tres palabras clave.
+
+Entrada
+
+ExplÃ­came profundamente la diferencia entre var, let y const en JavaScript, con teorÃ­a, anÃ¡lisis detallado.
+
+Salida
+
+Quiero una explicaciÃ³n completa que incluya:
+
+TeorÃ­a detallada
+
+Scope de cada tipo de variable
+
+Hoisting explicado profesionalmente
+
+ReasignaciÃ³n y redeclaraciÃ³n
+
+Ejemplo codificable
+
+ExplicaciÃ³n lÃ­nea por lÃ­nea
+
+Advertencias
+
+Errores tÃ­picos
+
+Buenas prÃ¡cticas recomendadas por la industria
+
+ ```js
+var nombre = "Luis";
+let edad = 21;
+const pais = "Colombia";
+
+nombre = "Carlos";
+edad = 22;
+
+try {
+  pais = "Argentina";
+} catch(e) {
+  console.log("Error al intentar modificar const:", e.message);
+}
+
+console.log(nombre, edad, pais);
+
+```
+
+ExplicaciÃ³n LÃ­nea por LÃ­nea
+var nombre = "Luis";
+
+var tiene scope de funciÃ³n, no de bloque.
+
+Puede redeclararse y reasignarse.
+
+Se eleva al inicio del contexto (â€œhoistingâ€) con valor undefined.
+
+let edad = 21;
+
+Tiene scope de bloque.
+
+No permite redeclaraciÃ³n en el mismo bloque.
+
+SÃ­ permite reasignaciÃ³n.
+
+Existe en la temporal dead zone hasta que se ejecuta su lÃ­nea.
+
+const pais = "Colombia";
+
+Scope de bloque.
+
+NO permite reasignaciÃ³n.
+
+NO permite redeclaraciÃ³n.
+
+nombre = "Carlos";
+
+VÃ¡lido: var permite reasignar.
+
+edad = 22;
+
+VÃ¡lido: let permite reasignar.
+
+Bloque try modificando un const
+
+pais = "Argentina"; produce un error porque const no permite reasignar.
+
+Se captura en el catch.
+
+console.log(nombre, edad, pais);
+
+Muestra: "Carlos", 22, "Colombia".
+
+Hoisting explicado profesionalmente
+
+var se eleva â†’ pero su valor es undefined hasta su asignaciÃ³n.
+
+let y const tambiÃ©n se elevan â†’ pero NO son accesibles antes de su lÃ­nea â†’ temporal dead zone.
+
+Acceder a una variable let antes de declararla produce error, no undefined.
+
+# PROMP 10 â€” Template Strings 
+---
+InstrucciÃ³n
+
+ActÃºa como un docente experto en JavaScript y explÃ­came profundamente quÃ© son los Template Strings (template literals). Necesito que desarrolles teorÃ­a, sintaxis, caracterÃ­sticas avanzadas, interpolaciÃ³n, saltos de lÃ­nea, expresiones dentro de plantillas, beneficios, casos reales y diferencias con la concatenaciÃ³n tradicional.
+Debe ser una explicaciÃ³n larga, completa, profesional y pedagÃ³gica, acompaÃ±ada de ejemplos reales y anÃ¡lisis lÃ­nea por lÃ­nea.
+
+Contexto
+
+Soy un estudiante que viene de usar concatenaciÃ³n clÃ¡sica con comillas " " y el operador +. Pero ya me di cuenta de que eso hace el cÃ³digo difÃ­cil de leer, especialmente cuando hay variables, textos largos o mÃºltiples lÃ­neas.
+He visto que existen template strings con comillas invertidas (` `), pero no entiendo completamente su potencial, ni cÃ³mo se usan correctamente.
+Quiero aprenderlos a profundidad para mejorar la calidad y legibilidad de mi cÃ³digo.
+
+Entrada
+
+ExplÃ­came profundamente quÃ© son los template strings en JavaScript con teorÃ­a,  anÃ¡lisis detallado.
+
+Salida
+
+Quiero una explicaciÃ³n completa que incluya:
+
+TeorÃ­a avanzada
+
+Sintaxis moderna
+
+InterpolaciÃ³n
+
+Expresiones dentro de la plantilla
+
+Multi-lÃ­neas
+
+Ejemplo codificable
+
+ExplicaciÃ³n lÃ­nea por lÃ­nea
+
+Ventajas
+
+Casos reales
+
+
+ ```js
+let nombre = "Sergio";
+let edad = 22;
+let mensaje = `Hola ${nombre}, tienes ${edad} aÃ±os y en 2 aÃ±os tendrÃ¡s ${edad + 2}.`;
+
+let descripcionLarga = `
+Este es un texto
+que ocupa varias
+lÃ­neas gracias a los template strings.
+`;
+
+console.log(mensaje);
+console.log(descripcionLarga);
+
+
+```
+
+
+ExplicaciÃ³n LÃ­nea por LÃ­nea
+let nombre = "Sergio";
+
+Variable tradicional.
+
+let edad = 22;
+
+Otra variable que interpolaremos dentro del template.
+
+let mensaje = \Hola ${nombre}, tienes ${edad} aÃ±os y en 2 aÃ±os tendrÃ¡s ${edad + 2}.`;`
+
+Uso de comillas invertidas.
+
+${variable} permite insertar valores directamente sin concatenar.
+
+${edad + 2} demuestra que se pueden ejecutar expresiones dentro del texto.
+
+Template multilÃ­nea
+
+No necesitas \n.
+
+Basta con escribir el texto en varias lÃ­neas dentro de las comillas invertidas.
+
+Ventajas Clave de los Template Strings
+
+Mucho mÃ¡s legibles que concatenar con "texto" + variable.
+
+Permiten expresiones dentro del texto.
+
+Ideal para construir HTML, mensajes, logs y textos complejos.
+
+Permiten texto en mÃºltiples lÃ­neas.
+
+Son estÃ¡ndar moderno del lenguaje.
+
+# PROMP 11 â€” Operadores de AsignaciÃ³n 
+---
+InstrucciÃ³n
+
+Quiero que actÃºes como un docente experto en JavaScript y me expliques a profundidad cÃ³mo funcionan los operadores de asignaciÃ³n del lenguaje. Debes cubrir el operador bÃ¡sico =, asÃ­ como todas sus variantes: +=, -=, *=, /=, %= y **=. Tu explicaciÃ³n debe ser pedagÃ³gica, tÃ©cnica y extensa, mostrando cÃ³mo cada uno transforma el valor de una variable.
+Necesito teorÃ­a completa, ejemplos reales, casos prÃ¡cticos, errores comunes, advertencias y un ejemplo codificable con anÃ¡lisis lÃ­nea por lÃ­nea.
+
+Contexto
+
+Soy un estudiante que ya sabe usar variables, pero todavÃ­a me confunde entender cÃ³mo funcionan los operadores de asignaciÃ³n combinada.
+Por ejemplo:
+
+No entiendo por quÃ© x += 5 no es lo mismo que x = x + 5 en algunos casos.
+
+Me confunde el operador **= porque no entiendo cÃ³mo funciona la potencia.
+
+He visto que estos operadores hacen el cÃ³digo mÃ¡s corto, pero me da miedo usarlos mal.
+
+TambiÃ©n me cuesta entender quÃ© pasa internamente cuando aplico varias operaciones a una misma variable.
+Necesito una explicaciÃ³n extensa y que me deje claro cuÃ¡ndo usar estos operadores profesionalmente.
+
+Entrada
+
+ExplÃ­came profundamente cÃ³mo funcionan los operadores de asignaciÃ³n en JavaScript con teorÃ­a,  anÃ¡lisis tÃ©cnico.
+
+Salida
+
+Quiero una explicaciÃ³n que incluya:
+
+TeorÃ­a
+
+Lista completa de operadores
+
+Ejemplo creado desde cero
+
+ExplicaciÃ³n lÃ­nea por lÃ­nea
+
+Notas tÃ©cnicas
+
+Errores comunes
+
+Caso de estudio
+
+ ```js
+let puntos = 10;
+
+puntos += 5;
+puntos -= 3;
+puntos *= 2;
+puntos /= 4;
+puntos %= 3;
+puntos **= 3;
+
+console.log(puntos);
+
+```
+
+ExplicaciÃ³n LÃ­nea por LÃ­nea
+let puntos = 10;
+
+Inicializamos la variable con el valor 10.
+
+puntos += 5;
+
+Equivale a puntos = puntos + 5;
+
+Resultado: 15.
+
+puntos -= 3;
+
+Equivale a puntos = puntos - 3;
+
+Resultado: 12.
+
+puntos *= 2;
+
+Equivale a puntos = puntos * 2;
+
+Resultado: 24.
+
+puntos /= 4;
+
+Equivale a puntos = puntos / 4;
+
+Resultado: 6.
+
+puntos %= 3;
+
+Equivale a puntos = puntos % 3;
+
+6 % 3 = 0.
+
+puntos **= 3;
+
+Equivale a puntos = puntos ** 3;
+
+0 elevado a 3 â†’ 0.
+
+console.log(puntos);
+
+Resultado final â†’ 0.
+
+
+# PROMP 12 â€” Objetos en JavaScript 
+---
+InstrucciÃ³n
+
+Quiero que actÃºes como un docente experto y expliques de manera profunda quÃ© son los objetos en JavaScript, incluyendo su estructura interna, cÃ³mo funcionan las propiedades, cÃ³mo se accede a ellas, cÃ³mo se modifican y cÃ³mo se eliminan.
+Necesito teorÃ­a avanzada, ejemplos reales, casos modernos, explicaciÃ³n de notaciÃ³n de punto, notaciÃ³n de corchetes, mutabilidad, referencias en memoria y errores comunes.
+
+Contexto
+
+Como estudiante, entiendo que un objeto es â€œuna estructura con claves y valoresâ€, pero no entiendo realmente lo que significa que los objetos sean mutables, que se pasen por referencia o por quÃ© a veces cuando copio un objeto y lo modifico, se modifica tambiÃ©n el original.
+TambiÃ©n me confunde cuÃ¡ndo usar corchetes y cuÃ¡ndo usar el punto. Quiero entender los objetos a un nivel profundo, como un programador profesional.
+
+Entrada
+
+ExplÃ­came profundamente quÃ© son los objetos en JavaScript y cÃ³mo funcionan con teorÃ­a, anÃ¡lisis detallado.
+
+Salida
+
+Quiero una explicaciÃ³n extensa que incluya:
+
+TeorÃ­a completa
+
+Mutabilidad
+
+Propiedades
+
+Formas de acceso
+
+Ejemplo codificable
+
+ExplicaciÃ³n lÃ­nea por lÃ­nea
+
+Advertencias
+
+Errores comunes
+
+Caso prÃ¡ctico real
+
+ ```js
+let usuario = {
+  nombre: "Carlos",
+  edad: 25,
+  activo: true
+};
+
+usuario.edad = 26;
+usuario["activo"] = false;
+
+delete usuario.nombre;
+
+console.log(usuario);
+
+
+```
+
+ExplicaciÃ³n LÃ­nea por LÃ­nea
+let usuario = { ... };
+
+Crea un objeto literal con tres propiedades.
+
+Los objetos almacenan valores organizados por claves.
+
+Son mutables: su contenido puede cambiar.
+
+usuario.edad = 26;
+
+NotaciÃ³n de punto.
+
+Cambia el valor de la propiedad edad.
+
+usuario["activo"] = false;
+
+NotaciÃ³n de corchetes.
+
+Permite usar claves dinÃ¡micas o variables como nombre de propiedad.
+
+delete usuario.nombre;
+
+Elimina la propiedad nombre del objeto.
+
+console.log(usuario);
+
+Resultado: { edad: 26, activo: false }
+
+# PROMP 13 â€” MÃ©todos en Objetos
+---
+InstrucciÃ³n
+
+ActÃºa como un docente experto en JavaScript y explÃ­came quÃ© son los mÃ©todos dentro de un objeto. Necesito que desarrolles una explicaciÃ³n completa sobre cÃ³mo funcionan, quÃ© papel tienen dentro de la programaciÃ³n orientada a objetos en JS, cÃ³mo utilizan el contexto this, y por quÃ© son fundamentales para modelar comportamientos dentro de estructuras de datos.
+
+Contexto
+
+He visto objetos que tienen funciones dentro, pero no entiendo por quÃ© esas funciones se llaman â€œmÃ©todosâ€. Tampoco comprendo por quÃ© dentro de esas funciones se puede usar this para acceder a otras propiedades del objeto. Como estudiante, siento que me falta entender cÃ³mo darle â€œvidaâ€ a un objeto para que no solo almacene datos, sino que ejecute acciones.
+Quiero entender esto de manera profunda, clara y prÃ¡ctica.
+
+Entrada
+
+ExplÃ­came quÃ© son los mÃ©todos dentro de un objeto en JavaScript, cÃ³mo funcionan, cÃ³mo se invocan y cÃ³mo utilizan this.
+
+Salida
+
+Quiero una explicaciÃ³n completa que incluya teorÃ­a, un ejemplo codificable y un anÃ¡lisis lÃ­nea por lÃ­nea
+
+ ```js
+const persona = {
+  nombre: "Daniel",
+  edad: 28,
+  saludar() {
+    return `Hola, soy ${this.nombre}, tengo ${this.edad} aÃ±os.`;
+  },
+  cumplirAnios() {
+    this.edad += 1;
+    return `Ahora tengo ${this.edad} aÃ±os.`;
+  }
+};
+
+console.log(persona.saludar());
+console.log(persona.cumplirAnios());
+console.log(persona.saludar());
+
+```
+
+ExplicaciÃ³n LÃ­nea por LÃ­nea
+const persona = { ... }
+
+Creamos un objeto literal con propiedades (nombre, edad) y dos mÃ©todos (saludar, cumplirAnios).
+
+saludar() { ... }
+
+Es un mÃ©todo, no una funciÃ³n externa.
+Representa un comportamiento asociado a la persona.
+
+this.nombre
+
+this apunta al objeto persona, por lo que accede correctamente a su propiedad nombre.
+
+cumplirAnios()
+
+MÃ©todo que modifica el estado interno del objeto.
+this.edad += 1 incrementa la edad.
+
+Las llamadas a los mÃ©todos
+
+persona.saludar() devuelve un mensaje con nombre y edad.
+
+persona.cumplirAnios() aumenta la edad.
+
+Volver a llamar persona.saludar() muestra el cambio aplicado.
+
+
+# PROMP 14 â€” Arrays en JavaScript
+---
+InstrucciÃ³n
+
+ActÃºa como docente experto y explÃ­came quÃ© son los arrays en JavaScript, cÃ³mo funcionan, cÃ³mo se manipulan y por quÃ© son tan importantes en la programaciÃ³n moderna. Necesito teorÃ­a, ejemplos prÃ¡cticos, mÃ©todos principales y una explicaciÃ³n lÃ­nea por lÃ­nea.
+
+Contexto
+
+Entiendo que un array es una lista de valores, pero no entiendo realmente cÃ³mo se almacenan, cÃ³mo acceder a ellos, por quÃ© comienzan en Ã­ndice 0, ni cÃ³mo funcionan mÃ©todos como push, pop, shift, indexOf, etc.
+Quiero una explicaciÃ³n clara y completa.
+
+Entrada
+
+ExplÃ­came profundamente quÃ© es un array, cÃ³mo se crea y cÃ³mo se manipula usando sus mÃ©todos bÃ¡sicos.
+
+Salida
+
+Quiero teorÃ­a, ejemplo largo, explicaciÃ³n lÃ­nea por lÃ­nea
+
+ ```js
+let frutas = ["Manzana", "Pera", "Banano"];
+
+frutas.push("Uva");
+frutas.unshift("Mango");
+
+let primera = frutas.shift();
+let ultima = frutas.pop();
+
+let posicion = frutas.indexOf("Pera");
+
+console.log(frutas, primera, ultima, posicion);
+
+
+```
+
+ExplicaciÃ³n LÃ­nea por LÃ­nea
+let frutas = ["Manzana", "Pera", "Banano"];
+
+Creamos un array con tres elementos, posicionados en Ã­ndices 0, 1 y 2.
+
+frutas.push("Uva");
+
+Agrega un elemento al final del array.
+
+frutas.unshift("Mango");
+
+Agrega un elemento al inicio del array.
+
+let primera = frutas.shift();
+
+Elimina y devuelve el primer elemento.
+
+let ultima = frutas.pop();
+
+Elimina y devuelve el Ãºltimo elemento.
+
+let posicion = frutas.indexOf("Pera");
+
+Busca la posiciÃ³n de "Pera".
+Si no existe, devuelve -1.
+
+console.log(...)
+
+Muestra el array final y los valores removidos.
+
+
+# PROMP 15 â€” MÃ©todos de Arrays: map, filter, reduce
+---
+InstrucciÃ³n
+
+ActÃºa como un docente experto en JavaScript y explÃ­came profundamente cÃ³mo funcionan los mÃ©todos map, filter y reduce. Quiero que detalles quÃ© hace cada uno, para quÃ© sirven, cÃ³mo transforman un array y cuÃ¡l es su propÃ³sito real dentro de la programaciÃ³n funcional moderna.
+
+Contexto
+
+Como estudiante, me cuesta entender cuÃ¡ndo usar map, cuÃ¡ndo usar filter y por quÃ© reduce parece tan complicado. Veo estos mÃ©todos en cÃ³digo profesional, pero todavÃ­a no logro comprender a fondo cÃ³mo funcionan internamente ni cÃ³mo escribirlos correctamente.
+
+Entrada
+
+ExplÃ­came map, filter y reduce con teorÃ­a, ejemplos y anÃ¡lisis lÃ­nea por lÃ­nea.
+
+Salida
+
+TeorÃ­a clara, ejemplo prÃ¡ctico, y anÃ¡lisis
+
+ ```js
+let numeros = [1, 2, 3, 4, 5];
+
+let dobles = numeros.map(n => n * 2);
+let pares = numeros.filter(n => n % 2 === 0);
+let sumaTotal = numeros.reduce((acum, n) => acum + n, 0);
+
+console.log(dobles, pares, sumaTotal);
+
+```
+
+
+ExplicaciÃ³n LÃ­nea por LÃ­nea
+let numeros = [1, 2, 3, 4, 5];
+
+Array base sobre el cual aplicaremos los mÃ©todos.
+
+let dobles = numeros.map(n => n * 2);
+
+map crea un nuevo array transformando cada elemento.
+
+No modifica el array original.
+
+Para cada n, devuelve n * 2.
+
+Resultado â†’ [2, 4, 6, 8, 10].
+
+let pares = numeros.filter(n => n % 2 === 0);
+
+filter devuelve un nuevo array con los elementos que cumplen la condiciÃ³n.
+
+Solo mantiene los nÃºmeros pares.
+
+Resultado â†’ [2, 4].
+
+let sumaTotal = numeros.reduce((acum, n) => acum + n, 0);
+
+reduce acumula todos los valores en un solo resultado.
+
+acum empieza en 0.
+
+Se suman uno a uno los valores del arreglo.
+
+Resultado â†’ 15.
+
+
+# PROMP 16 â€” Bucles: for, while, forâ€¦of, forâ€¦in
+---
+InstrucciÃ³n
+
+ExplÃ­came cÃ³mo funcionan los principales bucles de JavaScript: for, while, forâ€¦of y forâ€¦in.
+Quiero teorÃ­a completa, ejemplos claros y anÃ¡lisis detallado.
+
+Contexto
+
+SÃ© que los bucles sirven para repetir cÃ³digo, pero no entiendo cuÃ¡l usar en quÃ© situaciÃ³n. TambiÃ©n me confunde la diferencia entre forâ€¦of (valores) y forâ€¦in (propiedades). Quiero aprender esto bien.
+
+Entrada
+
+ExplÃ­came los distintos tipos de bucles y cÃ³mo funcionan.
+
+Salida
+
+Una explicaciÃ³n completa, con ejemplo codificable y anÃ¡lisis lÃ­nea por lÃ­nea.
+
+
+ ```js
+let numeros = [10, 20, 30];
+
+for (let i = 0; i < numeros.length; i++) {
+  console.log("For clÃ¡sico:", numeros[i]);
+}
+
+let contador = 0;
+while (contador < 3) {
+  console.log("While:", contador);
+  contador++;
+}
+
+for (let valor of numeros) {
+  console.log("For...of:", valor);
+}
+
+let persona = { nombre: "Ana", edad: 25 };
+for (let clave in persona) {
+  console.log("For...in:", clave, persona[clave]);
+}
+
+
+```
+
+
+ExplicaciÃ³n LÃ­nea por LÃ­nea
+
+For clÃ¡sico
+
+ ```js
+for (let i = 0; i < numeros.length; i++) {
+  console.log("For clÃ¡sico:", numeros[i]);
+}
+
+
+```
+
+Recorre con Ã­ndice.
+
+Ideal para controlar posiciones del array.
+
+i++ incrementa el Ã­ndice.
+
+While
+ ```js
+let contador = 0;
+while (contador < 3) {
+  console.log("While:", contador);
+  contador++;
+}
+
+```
+Repite mientras la condiciÃ³n sea verdadera.
+
+Riesgo: bucles infinitos si no se incrementa el contador.
+
+Forâ€¦of
+ ```js
+for (let valor of numeros) {
+  console.log("For...of:", valor);
+}
+
+
+```
+
+
+Recorre valores de arrays, strings y estructuras iterables.
+
+No da acceso directo al Ã­ndice.
+
+Forâ€¦in
+ ```js
+for (let clave in persona) {
+  console.log("For...in:", clave, persona[clave]);
+}
+
+
+```
+Recorre propiedades de objetos.
+
+Ãštil para leer claves dinÃ¡micas.
+
+# PROMP 17 â€” Funciones Declaradas vs Funciones Expresadas
+---
+InstrucciÃ³n
+
+ActÃºa como un docente experto en JavaScript y explÃ­came la diferencia entre funciones declaradas y funciones expresadas, incluyendo cÃ³mo funcionan, cÃ³mo se ejecutan, quÃ© diferencias internas tienen en cuanto al hoisting y por quÃ© es importante entenderlas al desarrollar cÃ³digo limpio y profesional.
+
+Contexto
+
+Como estudiante, veo funciones que se escriben de formas distintas, y aunque ambas funcionan, no entiendo por quÃ© elegir una sobre la otra.
+Me confunde el tema del â€œhoistingâ€, y no sÃ© por quÃ© una funciÃ³n declarada se puede usar antes de su definiciÃ³n, mientras que una funciÃ³n expresada no.
+
+Entrada
+
+ExplÃ­came detalladamente la diferencia entre funciones declaradas y funciones expresadas con teorÃ­a, ejemplos y anÃ¡lisis lÃ­nea por lÃ­nea.
+
+Salida
+
+Quiero teorÃ­a, ejemplo real, anÃ¡lisis tÃ©cnico, errores comunes y recomendaciones.
+
+
+ ```js
+// FunciÃ³n declarada
+function sumar(a, b) {
+  return a + b;
+}
+
+// FunciÃ³n expresada
+const restar = function(a, b) {
+  return a - b;
+};
+
+console.log(sumar(5, 3));
+console.log(restar(5, 3));
+
+```
+ExplicaciÃ³n LÃ­nea por LÃ­nea
+
+ ```js
+FunciÃ³n Declarada
+
+function sumar(a, b) {
+  return a + b;
+}
+Se â€œelevaâ€ durante el hoisting.
+
+Puede llamarse antes de que aparezca en el cÃ³digo.
+
+Ideal para funciones reutilizables que deben estar disponibles globalmente en el archivo.
+
+
+// FunciÃ³n expresada
+const restar = function(a, b) {
+  return a - b;
+};
+
+```
+
+No se eleva como funciÃ³n, solo como variable.
+
+No puede llamarse antes de ser definida.
+
+EstÃ¡ ligada al comportamiento de const o let.
+
+Es Ãºtil para funciones que deseas tratar como valores.
+
+
+# PROMP 18 â€” Funciones Flecha (Arrow Functions)
+---
+InstrucciÃ³n
+
+ActÃºa como docente experto y explÃ­came profundamente cÃ³mo funcionan las arrow functions en JavaScript: sintaxis, reglas especiales, el comportamiento de this, cuÃ¡ndo usarlas y cuÃ¡ndo no.
+
+Contexto
+
+He visto arrow functions por todos lados en cÃ³digo moderno, pero no entiendo completamente por quÃ© existen, ni su diferencia con las funciones tradicionales.
+TambiÃ©n he escuchado que tienen un this diferente y que no deben usarse como mÃ©todos de objetos.
+
+Entrada
+
+ExplÃ­came las arrow functions con teorÃ­a, ejemplo y anÃ¡lisis tÃ©cnico.
+
+Salida
+
+Necesito teorÃ­a completa, explicaciÃ³n lÃ­nea por lÃ­nea
+
+ ```js
+const sumar = (a, b) => a + b;
+
+const saludar = nombre => `Hola ${nombre}`;
+
+const usuario = {
+  nombre: "Laura",
+  saludar: () => `Hola, soy ${this.nombre}`
+};
+
+console.log(sumar(3, 4));
+console.log(saludar("AndrÃ©s"));
+console.log(usuario.saludar());
+
+
+```
+
+ExplicaciÃ³n LÃ­nea por LÃ­nea
+const sumar = (a, b) => a + b;
+
+Arrow function corta.
+
+Retorno implÃ­cito cuando no se usan llaves {}.
+
+Ideal para funciones simples.
+
+const saludar = nombre => \Hola ${nombre}`;`
+
+Un solo parÃ¡metro â†’ no necesita parÃ©ntesis.
+
+Retorna directamente una plantilla.
+
+ ```js
+const usuario = {
+  nombre: "Laura",
+  saludar: () => `Hola, soy ${this.nombre}`
+};
+
+```
+
+AquÃ­ NO funciona bien.
+
+Arrow function no crea su propio this.
+
+this.nombre serÃ¡ undefined porque no apunta al objeto.
+
+
+# PROMP 19 â€” ParÃ¡metros y Argumentos en Funciones
+---
+InstrucciÃ³n
+
+ActÃºa como un docente experto en JavaScript y explÃ­came claramente la diferencia entre parÃ¡metros y argumentos, cÃ³mo funcionan dentro de una funciÃ³n, cÃ³mo se pasan valores, quÃ© ocurre si no se envÃ­an argumentos suficientes y por quÃ© estos conceptos son esenciales para escribir funciones reutilizables.
+
+Contexto
+
+Como estudiante, me confunde mucho el tema de â€œparÃ¡metros vs argumentosâ€. A veces veo funciones con varios parÃ¡metros, pero cuando las llamo, si olvido enviar un valor, el resultado es undefined. TambiÃ©n he visto que JavaScript permite mÃ¡s argumentos de los necesarios, y no sÃ© cÃ³mo se manejan.
+Necesito entender este concepto con ejemplos claros y aplicados.
+
+Entrada
+
+ExplÃ­came la diferencia entre parÃ¡metros y argumentos, y cÃ³mo funcionan dentro de una funciÃ³n.
+
+Salida
+
+Quiero teorÃ­a detallada, ejemplo prÃ¡ctico, explicaciÃ³n lÃ­nea por lÃ­nea
+
+
+ ```js
+function saludar(nombre, edad) {
+  return `Hola ${nombre}, tienes ${edad} aÃ±os.`;
+}
+
+let mensaje1 = saludar("Carolina", 27);
+let mensaje2 = saludar("Luis");
+
+console.log(mensaje1);
+console.log(mensaje2);
+
+```
+
+ExplicaciÃ³n LÃ­nea por LÃ­nea
+function saludar(nombre, edad)
+
+ParÃ¡metros: son las variables que la funciÃ³n espera recibir.
+
+AquÃ­ los parÃ¡metros son nombre y edad.
+
+return \Hola ${nombre}, tienes ${edad} aÃ±os.`;`
+
+Usamos los parÃ¡metros para construir un mensaje.
+
+Si un parÃ¡metro no recibe argumento, serÃ¡ undefined.
+
+let mensaje1 = saludar("Carolina", 27);
+
+"Carolina" y 27 son argumentos, valores enviados a la funciÃ³n.
+
+Ambos parÃ¡metros reciben valor â†’ funciona perfecto.
+
+let mensaje2 = saludar("Luis");
+
+Solo enviamos un argumento.
+
+nombre = "Luis"
+
+edad = undefined
+
+Resultado: "Hola Luis, tienes undefined aÃ±os."
+
+Errores Comunes
+
+Pensar que parÃ¡metros y argumentos son lo mismo (no lo son).
+
+Olvidar enviar argumentos â†’ produce valores undefined.
+
+Enviar argumentos de mÃ¡s â†’ JavaScript los ignora a menos que uses ...rest.
+
+# PROMP 20 â€” ParÃ¡metros por Defecto
+---
+InstrucciÃ³n
+
+ActÃºa como docente experto en JavaScript y explÃ­came cÃ³mo funcionan los parÃ¡metros por defecto, cuÃ¡ndo usarlos, por quÃ© existen y cÃ³mo ayudan a evitar valores undefined dentro de las funciones.
+
+Contexto
+
+Me pasa que cuando llamo a una funciÃ³n y olvido enviar un argumento, el valor se vuelve undefined. He visto que existe la sintaxis de â€œparÃ¡metros por defectoâ€, pero no la entiendo completamente ni sÃ© cuÃ¡ndo usarla.
+
+Entrada
+
+ExplÃ­came cÃ³mo funcionan los parÃ¡metros por defecto con teorÃ­a y un ejemplo.
+
+Salida
+
+Quiero teorÃ­a clara, ejemplo codificable, explicaciÃ³n lÃ­nea por lÃ­nea 
+
+ ```js
+function registrarUsuario(nombre = "Invitado", pais = "Desconocido") {
+  return `Usuario: ${nombre}, PaÃ­s: ${pais}`;
+}
+
+let a = registrarUsuario("Laura", "Colombia");
+let b = registrarUsuario("Carlos");
+let c = registrarUsuario();
+
+console.log(a);
+console.log(b);
+console.log(c);
+
+```
+ExplicaciÃ³n LÃ­nea por LÃ­nea
+function registrarUsuario(nombre = "Invitado", pais = "Desconocido")
+
+Si no se envÃ­a un argumento, se usa el valor definido por defecto.
+
+Evita resultados inesperados como "undefined".
+
+registrarUsuario("Laura", "Colombia")
+
+Ambos argumentos se envÃ­an â†’ la funciÃ³n usa esos valores.
+
+registrarUsuario("Carlos")
+
+Solo recibe el primer argumento.
+
+pais no se envÃ­a â†’ toma "Desconocido".
+
+registrarUsuario()
+
+NingÃºn argumento.
+
+Ambos parÃ¡metros toman los valores por defecto.
+
+
+# PROMP 21 â€” Operador Spread (...)
+---
+InstrucciÃ³n
+
+ActÃºa como un docente experto en JavaScript y explÃ­came cÃ³mo funciona el operador spread (...), para quÃ© sirve, quÃ© problemas resuelve y cÃ³mo se usa tanto en arrays como en objetos. Incluye teorÃ­a, ejemplos claros y explicaciÃ³n lÃ­nea por lÃ­nea.
+
+Contexto
+
+Como estudiante, me confunde ver el operador ... en el cÃ³digo. A veces lo veo en arrays, otras en objetos, y no entiendo si copia, si expande, si mezcla o si convierte elementos. Necesito entender su propÃ³sito real y cÃ³mo usarlo correctamente.
+
+Entrada
+
+ExplÃ­came quÃ© hace el operador spread y cÃ³mo se usa en arrays y objetos.
+
+Salida
+
+Una explicaciÃ³n completa, con teorÃ­a, ejemplos y advertencias.
+
+
+ ```js
+let numeros = [1, 2, 3];
+let copia = [...numeros];
+let mezcla = [...numeros, 4, 5];
+
+let usuario = { nombre: "Laura", edad: 25 };
+let copiaUsuario = { ...usuario, activo: true };
+
+console.log(copia, mezcla, copiaUsuario);
+
+
+```
+
+ExplicaciÃ³n LÃ­nea por LÃ­nea
+
+Array Spread
+let copia = [...numeros];
+
+Crea una copia superficial del array.
+
+NO modifica el original.
+
+Cada elemento se expande dentro del nuevo array.
+
+let mezcla = [...numeros, 4, 5];
+
+Inserta cada elemento de numeros individualmente.
+
+Luego agrega valores extra.
+
+Object Spread
+let copiaUsuario = { ...usuario, activo: true };
+
+Copia todas las propiedades del objeto original.
+
+Agrega (o reemplaza) propiedades nuevas.
+
+El resultado es un objeto actualizado sin mutar el original.
+
+
+# PROMP 22 â€” Rest Parameters (...args)
+---
+InstrucciÃ³n
+
+ActÃºa como docente experto y explÃ­came cÃ³mo funcionan los rest parameters, cuÃ¡ndo se usan, por quÃ© existen y cÃ³mo permiten capturar mÃºltiples argumentos en una funciÃ³n.
+
+Contexto
+
+Me confunde que el mismo sÃ­mbolo ... del spread tambiÃ©n se use para agrupar valores. No entiendo cÃ³mo diferencia JavaScript cuÃ¡ndo estÃ¡ expandiendo y cuÃ¡ndo estÃ¡ agrupando. Necesito entenderlo con claridad.
+
+Entrada
+
+ExplÃ­came cÃ³mo funcionan los parÃ¡metros rest con teorÃ­a y ejemplo.
+
+Salida
+
+TeorÃ­a, ejemplo extenso, anÃ¡lisis
+
+
+ ```js
+function sumar(...numeros) {
+  return numeros.reduce((acc, n) => acc + n, 0);
+}
+
+let resultado = sumar(1, 2, 3, 4, 5);
+
+console.log(resultado);
+
+```
+
+ExplicaciÃ³n LÃ­nea por LÃ­nea
+
+function sumar(...numeros)
+
+...numeros agrupa todos los argumentos en un array real.
+
+Sin importar cuÃ¡ntos argumentos envÃ­es, quedan dentro del arreglo.
+
+numeros.reduce((acc, n) => acc + n, 0)
+
+Recorre todos los nÃºmeros acumulÃ¡ndolos.
+
+0 es el valor inicial.
+
+sumar(1, 2, 3, 4, 5)
+
+Todos los valores ingresan dentro del parÃ¡metro rest.
+
+Resultado final â†’ 15.
+
+# PROMP 23 â€” DesestructuraciÃ³n de Arrays (Array Destructuring)
+---
+InstrucciÃ³n
+
+ActÃºa como un docente experto en JavaScript y explÃ­came cÃ³mo funciona la desestructuraciÃ³n de arrays, para quÃ© sirve, cÃ³mo facilita el cÃ³digo, y cuÃ¡les son sus formas mÃ¡s comunes. Incluye teorÃ­a clara, un ejemplo prÃ¡ctico, explicaciÃ³n lÃ­nea por lÃ­nea, advertencias y un caso aplicado.
+
+Contexto
+
+He visto este tipo de sintaxis:
+
+
+ ```js
+const [a, b] = numeros;
+
+```
+
+Pero no entiendo completamente quÃ© significa ni por quÃ© es Ãºtil.
+Quiero comprender cÃ³mo funciona, quÃ© ventajas tiene y cÃ³mo usarla correctamente para extraer valores de arreglos.
+
+Entrada
+
+ExplÃ­came quÃ© es la desestructuraciÃ³n de arrays en JavaScript y cÃ³mo utilizarla correctamente.
+
+Salida
+
+TeorÃ­a completa, ejemplo codificable, explicaciÃ³n paso a paso 
+
+ ```js
+let colores = ["Rojo", "Verde", "Azul"];
+
+let [primero, segundo, tercero] = colores;
+
+let [soloUno] = colores;
+
+let [a, , c] = colores;
+
+console.log(primero, segundo, tercero);
+console.log(soloUno);
+console.log(a, c);
+
+
+```
+
+
+ExplicaciÃ³n LÃ­nea por LÃ­nea
+let colores = ["Rojo", "Verde", "Azul"];
+
+Tenemos un array con tres valores.
+
+let [primero, segundo, tercero] = colores;
+
+Extrae cada elemento del array en variables independientes.
+
+primero = "Rojo"
+
+segundo = "Verde"
+
+tercero = "Azul"
+
+let [soloUno] = colores;
+
+Obtiene SOLO el primer valor.
+
+Los demÃ¡s no se almacenan.
+
+let [a, , c] = colores;
+
+â€œSaltamosâ€ el Ã­ndice 1.
+
+a = "Rojo"
+
+c = "Azul"
+
+console.log(...)
+
+Muestra los resultados de cada desestructuraciÃ³n.
+
+
+# PROMP 24 â€” DesestructuraciÃ³n de Objetos (Object Destructuring)
+---
+InstrucciÃ³n
+
+ActÃºa como un docente experto en JavaScript y explÃ­came cÃ³mo funciona la desestructuraciÃ³n de objetos, cÃ³mo se usa correctamente, cÃ³mo renombrar propiedades, cÃ³mo usar valores por defecto y por quÃ© es una tÃ©cnica fundamental en JavaScript moderno.
+
+Contexto
+
+He visto cÃ³digo asÃ­:
+
+ ```js
+const { nombre, edad } = persona;
+
+```
+
+Pero no entiendo completamente cÃ³mo funciona, ni quÃ© pasa si el nombre de la propiedad no coincide, ni cÃ³mo asignarle un nombre diferente. Quiero dominar esta tÃ©cnica porque la veo en todos los proyectos y documentaciÃ³n moderna.
+
+Entrada
+
+ExplÃ­came cÃ³mo funciona la desestructuraciÃ³n de objetos con teorÃ­a, ejemplo y anÃ¡lisis.
+
+Salida
+
+Una explicaciÃ³n clara, extensa y con ejemplo completo.
+
+ ```js
+let usuario = {
+  nombre: "Carlos",
+  edad: 29,
+  pais: "MÃ©xico"
+};
+
+let { nombre, edad } = usuario;
+
+let { pais: nacionalidad } = usuario;
+
+let { profesion = "No especificado" } = usuario;
+
+console.log(nombre, edad, nacionalidad, profesion);
+
+```
+
+ExplicaciÃ³n LÃ­nea por LÃ­nea
+let usuario = { ... };
+
+Creamos un objeto con tres propiedades.
+
+let { nombre, edad } = usuario;
+
+Extraemos propiedades del objeto.
+
+nombre = "Carlos"
+
+edad = 29
+
+Los nombres deben coincidir exactamente con las claves del objeto.
+
+let { pais: nacionalidad } = usuario;
+
+DesestructuraciÃ³n con renombramiento.
+
+pais es la propiedad original.
+
+nacionalidad es el nombre de la nueva variable.
+
+let { profesion = "No especificado" } = usuario;
+
+La propiedad no existe en el objeto.
+
+Se asigna el valor por defecto "No especificado".
+
+console.log(...)
+
+Muestra todas las variables obtenidas.
+
+# PROMP 25 â€” JSON: QuÃ© es y cÃ³mo se usa en JavaScript
+---
+InstrucciÃ³n
+
+ActÃºa como un docente experto en JavaScript y explÃ­came quÃ© es JSON, cÃ³mo funciona, cuÃ¡l es su estructura, cÃ³mo se convierte desde y hacia JavaScript, y para quÃ© se utiliza en aplicaciones reales. Incluye teorÃ­a clara, ejemplo codificable, explicaciÃ³n lÃ­nea por lÃ­nea y advertencias importantes.
+
+Contexto
+
+Como estudiante, he escuchado mucho el tÃ©rmino JSON, sobre todo cuando se habla de APIs, bases de datos, backend, peticiones HTTP, etc.
+Pero todavÃ­a no entiendo del todo quÃ© es, cÃ³mo estÃ¡ estructurado y por quÃ© JavaScript lo maneja tan fÃ¡cilmente.
+TambiÃ©n me confunde cuÃ¡ndo usar JSON.stringify y cuÃ¡ndo usar JSON.parse.
+
+Entrada
+
+ExplÃ­came quÃ© es JSON, cÃ³mo se usa en JavaScript y cÃ³mo convertir objetos a JSON y JSON a objetos.
+
+Salida
+
+TeorÃ­a sÃ³lida, ejemplo, anÃ¡lisis lÃ­nea por lÃ­nea
+
+ ```js
+let usuario = {
+  nombre: "Ana",
+  edad: 30,
+  activo: true
+};
+
+let json = JSON.stringify(usuario);
+let objeto = JSON.parse(json);
+
+console.log(json);
+console.log(objeto);
+
+```
+ExplicaciÃ³n LÃ­nea por LÃ­nea
+let usuario = { ... }
+
+Creamos un objeto de JavaScript con propiedades tÃ­picas.
+
+let json = JSON.stringify(usuario);
+
+Convierte el objeto a una cadena JSON.
+
+JSON es TEXTO, no es un objeto real.
+
+Ãštil para enviar datos por internet o almacenarlos.
+
+Ejemplo del resultado:
+"{"nombre":"Ana","edad":30,"activo":true}"
+
+let objeto = JSON.parse(json);
+
+Convierte el texto JSON nuevamente a un objeto JavaScript real.
+
+console.log(json)
+
+Imprime el texto JSON.
+
+console.log(objeto)
+
+Imprime el objeto convertido.
+
+
+# PROMP 26 â€” Manejo de Errores con tryâ€¦catch
+---
+InstrucciÃ³n
+
+ActÃºa como docente experto en JavaScript y explÃ­came cÃ³mo funciona el manejo de errores con tryâ€¦catch, cuÃ¡ndo usarlo, cÃ³mo capturar errores, cÃ³mo manejar errores asincrÃ³nicos y cÃ³mo usar finally. Incluye teorÃ­a y ejemplo.
+
+Contexto
+
+Como estudiante, cuando el cÃ³digo falla la consola muestra errores rojos y no sÃ© cÃ³mo controlarlos para que el programa no deje de funcionar.
+He visto tryâ€¦catch, pero no sÃ© exactamente quÃ© hace ni cÃ³mo se usa correctamente.
+
+Entrada
+
+ExplÃ­came profundamente cÃ³mo manejar errores usando tryâ€¦catch.
+
+Salida
+
+TeorÃ­a clara, ejemplo codificable, anÃ¡lisis y advertencias.
+
+ ```js
+function dividir(a, b) {
+  try {
+    if (b === 0) {
+      throw new Error("No se puede dividir entre cero");
+    }
+    return a / b;
+  } catch (error) {
+    console.log("Error capturado:", error.message);
+  } finally {
+    console.log("OperaciÃ³n finalizada");
+  }
+}
+
+dividir(10, 2);
+dividir(10, 0);
+
+```
+
+ExplicaciÃ³n LÃ­nea por LÃ­nea
+try { ... }
+
+AquÃ­ va el cÃ³digo que podrÃ­a fallar.
+
+Si ocurre un error, se salta automÃ¡ticamente al catch.
+
+if (b === 0) { throw new Error(...) }
+
+Lanzamos un error manualmente para evitar operaciones invÃ¡lidas.
+
+catch (error) { ... }
+
+AquÃ­ capturamos el error.
+
+error.message contiene la descripciÃ³n del error.
+
+finally { ... }
+
+Este bloque SIEMPRE se ejecuta.
+
+Ãštil para cerrar conexiones, limpiar recursos, mostrar mensajes finales, etc.
+
+Llamadas a la funciÃ³n
+
+dividir(10, 2) funciona normalmente.
+
+dividir(10, 0) activa el error â†’ pasa al catch.
+
+# PROMP 27 â€” AsincronÃ­a en JavaScript (Concepto General)
+---
+InstrucciÃ³n
+
+ActÃºa como docente experto en JavaScript y explÃ­came profundamente quÃ© es la asincronÃ­a, por quÃ© existe en el lenguaje, cÃ³mo funciona el event loop, y cÃ³mo permite que JavaScript maneje mÃºltiples tareas sin bloquear la ejecuciÃ³n.
+
+Contexto
+
+Como estudiante, me confunde totalmente el concepto de asincronÃ­a. He visto cosas como setTimeout, promesas, callbacks y async/await, pero no entiendo por quÃ© funcionan de forma â€œdiferidaâ€ ni por quÃ© el cÃ³digo parece ejecutarse fuera de orden.
+Necesito una explicaciÃ³n clara que me ayude a entender todo desde la base.
+
+Entrada
+
+ExplÃ­came quÃ© es la asincronÃ­a en JavaScript con teorÃ­a y ejemplo.
+
+Salida
+
+Quiero teorÃ­a completa, ejemplo claro, explicaciÃ³n lÃ­nea por lÃ­nea 
+
+
+ ```js
+console.log("Inicio");
+
+setTimeout(() => {
+  console.log("Proceso asincrÃ³nico");
+}, 2000);
+
+console.log("Fin");
+
+```
+
+ExplicaciÃ³n LÃ­nea por LÃ­nea
+
+console.log("Inicio");
+
+Se ejecuta inmediatamente.
+
+setTimeout(() => { ... }, 2000);
+
+EnvÃ­a la funciÃ³n al Event Loop.
+
+No se ejecuta de inmediato.
+
+Se programa para ejecutarse despuÃ©s de 2 segundos.
+
+JavaScript continÃºa sin esperar.
+
+console.log("Fin");
+
+Se imprime antes del mensaje asincrÃ³nico.
+
+# PROMP 28 â€” Promesas (Promises)
+---
+InstrucciÃ³n
+
+ActÃºa como docente experto en JavaScript y explÃ­came quÃ© es una Promise, para quÃ© sirve, cÃ³mo funciona su ciclo interno y cuÃ¡les son sus estados: pending, fulfilled, rejected. Incluye teorÃ­a clara, ejemplo real y anÃ¡lisis completo.
+
+Contexto
+
+He oÃ­do mucho sobre Promesas, pero todavÃ­a me confunden.
+No entiendo cÃ³mo funcionan, cuÃ¡ndo se resuelven, quÃ© significa .then() y .catch(), o por quÃ© son mejores que los callbacks anidados.
+
+Entrada
+
+ExplÃ­came profundamente quÃ© son las promesas en JavaScript y cÃ³mo se utilizan.
+
+Salida
+
+Quiero teorÃ­a, ejemplo codificable, explicaciÃ³n lÃ­nea por lÃ­nea y errores comunes.
+
+
+ ```js
+function tareaAsincronica() {
+  return new Promise((resolve, reject) => {
+    let exito = true;
+
+    setTimeout(() => {
+      if (exito) resolve("Proceso completado");
+      else reject("OcurriÃ³ un error");
+    }, 1500);
+  });
+}
+
+tareaAsincronica()
+  .then(mensaje => console.log("Ã‰xito:", mensaje))
+  .catch(error => console.log("Error:", error));
+
+```
+
+ExplicaciÃ³n LÃ­nea por LÃ­nea
+
+return new Promise((resolve, reject) => { ... })
+
+Creamos una nueva promesa.
+
+resolve â†’ se ejecuta cuando la operaciÃ³n fue exitosa.
+
+reject â†’ se ejecuta cuando ocurriÃ³ un error.
+
+setTimeout(() => { ... }, 1500);
+
+Simula un proceso asincrÃ³nico.
+
+if (exito) resolve("Proceso completado");
+
+Cumple la promesa â†’ estado: fulfilled.
+
+else reject("OcurriÃ³ un error");
+
+Si algo sale mal, la promesa cambia a estado: rejected.
+
+.then(mensaje => ...)
+
+Se ejecuta cuando la promesa se cumple.
+
+.catch(error => ...)
+
+Captura cualquier error que ocurra.
+
+Estados de una promesa
+
+pending â†’ aÃºn no se ha completado
+
+fulfilled â†’ se resolviÃ³ exitosamente
+
+rejected â†’ ocurriÃ³ un error
+
+# PROMP 29 â€” Async / Await
+---
+InstrucciÃ³n
+
+ActÃºa como un docente experto en JavaScript y explÃ­came cÃ³mo funcionan async y await, por quÃ© existen, cÃ³mo simplifican el manejo de promesas, y por quÃ© permiten escribir cÃ³digo asincrÃ³nico con una estructura mÃ¡s parecida al cÃ³digo sÃ­ncrono.
+
+Contexto
+
+Como estudiante, entiendo que las promesas funcionan con .then() y .catch(), pero el cÃ³digo se ve muy encadenado. He visto que async/await hace que todo se vea mÃ¡s limpio, pero no entiendo cÃ³mo funciona internamente, ni por quÃ© solo se puede usar await dentro de una funciÃ³n async.
+Quiero entenderlo con claridad.
+
+Entrada
+
+ExplÃ­came async/await con teorÃ­a, ejemplo y explicaciÃ³n tÃ©cnica.
+
+Salida
+
+Una explicaciÃ³n completa con teorÃ­a, ejemplo, anÃ¡lisis 
+
+Ejemplo: 
+
+ ```js
+function procesoAsincronico() {
+  return new Promise(resolve => {
+    setTimeout(() => resolve("Datos cargados"), 2000);
+  });
+}
+
+async function ejecutar() {
+  console.log("Iniciando...");
+
+  let resultado = await procesoAsincronico();
+
+  console.log("Resultado:", resultado);
+  console.log("Finalizado.");
+}
+
+ejecutar();
+
+```
+
+ExplicaciÃ³n LÃ­nea por LÃ­nea
+function procesoAsincronico() { ... }
+
+FunciÃ³n que devuelve una promesa que se resuelve luego de 2 segundos.
+
+async function ejecutar()
+
+Declaramos una funciÃ³n async.
+
+Solo dentro de funciones async se puede usar await.
+
+let resultado = await procesoAsincronico();
+
+Pausa la ejecuciÃ³n SOLO dentro de esta funciÃ³n.
+
+Espera que la promesa se resuelva y guarda el resultado.
+
+No bloquea todo el programa.
+
+console.log("Resultado:", resultado);
+
+Imprime el valor devuelto por la promesa.
+
+ejecutar();
+
+Llamamos la funciÃ³n asincrÃ³nica.
+
+# PROMP 30 â€” MÃ³dulos en JavaScript (import / export)
+---
+InstrucciÃ³n
+
+ActÃºa como un docente experto y explÃ­came cÃ³mo funcionan los mÃ³dulos en JavaScript, por quÃ© existen, cÃ³mo usar import y export, quÃ© son los mÃ³dulos ES6, por quÃ© ayudan a organizar proyectos y cuÃ¡l es la diferencia entre exportaciones por defecto y exportaciones nombradas.
+
+Contexto
+
+Como estudiante, he visto import y export en proyectos modernos (Vite, React, Node, etc.), pero aÃºn no entiendo completamente cÃ³mo funcionan los mÃ³dulos ni por quÃ© es obligatorio usar type="module" en HTML.
+Quiero entender cÃ³mo dividir correctamente el cÃ³digo en archivos separados.
+
+Entrada
+
+ExplÃ­came cÃ³mo funcionan los mÃ³dulos ES6 con teorÃ­a, ejemplos y anÃ¡lisis.
+
+Salida
+
+Una explicaciÃ³n clara y completa con ejemplo real.
+
+Ejemplo (creado desde cero):
+archivo: operaciones.js
+
+ ```js
+export function sumar(a, b) {
+  return a + b;
+}
+
+export function restar(a, b) {
+  return a - b;
+}
+
+export default function multiplicar(a, b) {
+  return a * b;
+}
+
+
+```
+Archivo App.js
+
+ ```js
+
+import multiplicar, { sumar, restar } from "./operaciones.js";
+
+console.log(sumar(5, 3));
+console.log(restar(10, 4));
+console.log(multiplicar(6, 2));
+
+```
+
+ExplicaciÃ³n LÃ­nea por LÃ­nea
+En operaciones.js
+
+export function sumar â†’ exportaciÃ³n nombrada.
+
+export function restar â†’ otra exportaciÃ³n nombrada.
+
+export default function multiplicar â†’ exportaciÃ³n por defecto.
+
+En app.js
+
+import multiplicar, { sumar, restar }
+
+multiplicar viene del export default.
+
+{ sumar, restar } vienen de los exports nombrados.
+
+console.log(...)
+
+Probamos las funciones importadas desde otro archivo.
