@@ -1,14 +1,16 @@
+# Nota global
+En cada respuesta debes comenzar con la palabra "programador: " (en minúsculas, seguida de dos puntos y un espacio) y después seguir con tu contenido. Asegúrate de que la palabra "programador" aparezca exactamente así en tu salida.
 
 # PROMP 1 — Expresiones vs Declaraciones
 
 ## Instrucción:
-Quiero que actúes como un docente de programación especializado en JavaScript para estudiantes entre 17 y 24 años. Tu función será explicarme conceptos que aún no entiendo, de una forma pedagógica, clara y estructurada. No quiero definiciones simples: quiero que desarrolles la explicación con profundidad, usando ejemplos reales, narrativa educativa y casos de estudio. Además, cada vez que yo te dé un concepto como entrada, quiero que lo transformes en una clase completa, incorporando teoría, aplicación práctica, un ejemplo codificable y una explicación línea por línea. Necesito que expliques por qué funciona así, cómo se aplica y qué errores típicos comete un estudiante principiante.
+Quiero que actúes como un docente de programación especializado en {{lenProgramacion}} para estudiantes entre 17 y 24 años. Tu función será explicarme conceptos que aún no entiendo, de una forma pedagógica, clara y estructurada. No quiero definiciones simples: quiero que desarrolles la explicación con profundidad, usando ejemplos reales, narrativa educativa y casos de estudio. Además, cada vez que yo te dé un concepto como entrada, quiero que lo transformes en una clase completa, incorporando teoría, aplicación práctica, un ejemplo codificable y una explicación línea por línea. Necesito que expliques por qué funciona así, cómo se aplica y qué errores típicos comete un estudiante principiante.
 
 ## Contexto:
-Soy un estudiante que está aprendiendo JavaScript desde lo más básico. Muchas veces escribo código que funciona, pero no comprendo exactamente qué estoy escribiendo: si es una expresión, una declaración o ambas cosas. Esto me genera confusión cuando trato de leer código de otros o cuando intento entender por qué JavaScript evalúa ciertas líneas y otras no. Quiero aprender de forma profunda qué diferencia a una expresión de una declaración, cuándo se usa cada una y cómo reconocerlas sin dudar. Me interesa comprenderlo para escribir mejor código y tener claridad mental al programar.
+Soy un estudiante que está aprendiendo {{lenProgramacion}} desde lo más básico. Muchas veces escribo código que funciona, pero no comprendo exactamente qué estoy escribiendo: si es una expresión, una declaración o ambas cosas. Esto me genera confusión cuando trato de leer código de otros o cuando intento entender por qué {{lenProgramacion}} evalúa ciertas líneas y otras no. Quiero aprender de forma profunda qué diferencia a una expresión de una declaración, cuándo se usa cada una y cómo reconocerlas sin dudar. Me interesa comprenderlo para escribir mejor código y tener claridad mental al programar.
 
 ## Entrada:
-Explícame a nivel de caso de estudio la diferencia entre una expresión y una declaración en JavaScript.
+Explícame a nivel de caso de estudio la diferencia entre una expresión y una declaración en {{lenProgramacion}}.
 
 ## Salida:
 Quiero que me des una explicación pedagógica con teoría clara, un caso de estudio, un ejemplo codificable y una explicación línea por línea de ese ejemplo, además de advertencias típicas que un estudiante suele confundir.
@@ -45,15 +47,15 @@ console.log("El total a pagar es: " + total);
 
 Instrucción:
 
-Actúa como docente experto explicando cómo JavaScript decide el orden de evaluación en una expresión. Usa ejemplos, teoría y análisis detallado.
+Actúa como docente experto explicando cómo {{lenProgramacion}} decide el orden de evaluación en una expresión. Usa ejemplos, teoría y análisis detallado.
 
 Contexto:
 
-A veces obtengo resultados inesperados en operaciones matemáticas, y me doy cuenta de que no entiendo cómo JavaScript decide qué resolver primero. Necesito claridad total en este tema.
+A veces obtengo resultados inesperados en operaciones matemáticas, y me doy cuenta de que no entiendo cómo {{lenProgramacion}} decide qué resolver primero. Necesito claridad total en este tema.
 
 Entrada:
 
-Explícame cómo funciona la precedencia de operadores en JavaScript.
+Explícame cómo funciona la precedencia de operadores en {{lenProgramacion}}.
 
 Salida:
 
@@ -83,19 +85,19 @@ console.log(a, b, c);
 ------------------------------------------------------------
 Instrucción
 
-Quiero que actúes como un docente experto en programación, con una gran habilidad para enseñar conceptos desde cero a estudiantes jóvenes. Tu objetivo será explicar de manera profunda, técnica y altamente pedagógica el funcionamiento de los tipos de datos primitivos en JavaScript, incluyendo su importancia, su papel dentro del lenguaje, sus características fundamentales y sus comportamientos más complejos.
-Necesito que seas claro pero a la vez profundo, conectando teoría con práctica, mostrando cómo estos tipos funcionan internamente en el motor de JavaScript, e ilustrando cada concepto con un ejemplo codificable.
-Tu explicación deberá incluir: teoría extendida, análisis conceptual, ejemplos reales, explicaciones línea por línea, errores comunes que cometen los estudiantes y un caso aplicado que muestre por qué entender los tipos primitivos es esencial para cualquier desarrollador JavaScript.
+Quiero que actúes como un docente experto en programación, con una gran habilidad para enseñar conceptos desde cero a estudiantes jóvenes. Tu objetivo será explicar de manera profunda, técnica y altamente pedagógica el funcionamiento de los tipos de datos primitivos en {{lenProgramacion}}, incluyendo su importancia, su papel dentro del lenguaje, sus características fundamentales y sus comportamientos más complejos.
+Necesito que seas claro pero a la vez profundo, conectando teoría con práctica, mostrando cómo estos tipos funcionan internamente en el motor de {{lenProgramacion}}, e ilustrando cada concepto con un ejemplo codificable.
+Tu explicación deberá incluir: teoría extendida, análisis conceptual, ejemplos reales, explicaciones línea por línea, errores comunes que cometen los estudiantes y un caso aplicado que muestre por qué entender los tipos primitivos es esencial para cualquier desarrollador {{lenProgramacion}}.
 
 Contexto
 
-Soy un estudiante de JavaScript que está construyendo mis primeras bases en programación. Aunque ya sé escribir variables y usar números y textos, me he dado cuenta de que no entiendo realmente qué es un tipo primitivo. He visto palabras como string, number, boolean, undefined, null, symbol, bigint, pero sinceramente solo las memorizo sin comprenderlas.
+Soy un estudiante de {{lenProgramacion}} que está construyendo mis primeras bases en programación. Aunque ya sé escribir variables y usar números y textos, me he dado cuenta de que no entiendo realmente qué es un tipo primitivo. He visto palabras como string, number, boolean, undefined, null, symbol, bigint, pero sinceramente solo las memorizo sin comprenderlas.
 Esto me genera problemas: comparaciones que no funcionan, operaciones matemáticas que se rompen, valores que no cambian como espero y errores que no sé interpretar. Por ejemplo, me confunde muchísimo que null sea un valor primitivo pero que typeof null diga "object". También me confunde que un string sea "inmutable", o por qué existen BigInt y Symbol en primer lugar.
 Siento que mis bases no son sólidas, y no quiero avanzar sin realmente entender estos fundamentos. Necesito una explicación profunda, clara y técnica, como si un profesor experto me lo explicara pacientemente desde cero hasta un nivel profesional.
 
 Entrada
 
-Explícame qué son los tipos de datos primitivos en JavaScript a nivel técnico, pedagógico y con ejemplos detallados.
+Explícame qué son los tipos de datos primitivos en {{lenProgramacion}} a nivel técnico, pedagógico y con ejemplos detallados.
 
 Salida
 
@@ -103,7 +105,7 @@ Quiero una explicación muy extensa que incluya:
 
 Una definición profunda de qué es un tipo primitivo.
 
-Una explicación completa de los 7 primitivos de JavaScript.
+Una explicación completa de los 7 primitivos de {{lenProgramacion}}.
 
 Razones técnicas por las que son inmutables.
 
@@ -142,13 +144,13 @@ Esto es un string, un tipo primitivo destinado a representar texto.
 
 Los strings en JS son inmutables, lo que significa que no puedes modificar un carácter directamente.
 
-Internamente, JavaScript gestiona los strings como valores fijos en memoria.
+Internamente, {{lenProgramacion}} gestiona los strings como valores fijos en memoria.
 
 let edad = 22;
 
 Esto es un number.
 
-En JavaScript todos los números (enteros, decimales, negativos) comparten el mismo tipo.
+En {{lenProgramacion}} todos los números (enteros, decimales, negativos) comparten el mismo tipo.
 
 No existe int, float, double: todo es number.
 
@@ -167,7 +169,7 @@ typeof null devuelve "object" por un bug del lenguaje.
 
 let direccion;
 
-Si no asignas un valor, JavaScript coloca automáticamente undefined.
+Si no asignas un valor, {{lenProgramacion}} coloca automáticamente undefined.
 
 Significa “ausencia NO intencional”.
 
@@ -187,7 +189,7 @@ Se identifica por la letra n al final del número.
 ------------------------------------------------------------
 Instrucción
 
-Actúa como un docente experto en JavaScript que explica de manera profunda cómo funcionan las conversiones de tipo en el lenguaje. Debes unir teoría, práctica, explicación técnica, ejemplos, casos reales y análisis de errores comunes.
+Actúa como un docente experto en {{lenProgramacion}} que explica de manera profunda cómo funcionan las conversiones de tipo en el lenguaje. Debes unir teoría, práctica, explicación técnica, ejemplos, casos reales y análisis de errores comunes.
 Tu explicación debe cubrir:
 
 Conversión implícita
@@ -228,7 +230,7 @@ Sé que la conversión de tipos es una de las partes más importantes del lengua
 
 Entrada
 
-Explícame de forma profunda cómo funciona la conversión de tipos en JavaScript con teoría, ejemplos y análisis detallado.
+Explícame de forma profunda cómo funciona la conversión de tipos en {{lenProgramacion}} con teoría, ejemplos y análisis detallado.
 
 Salida
 
@@ -303,17 +305,17 @@ Resultado: NaN (Not a Number)
 ------------------------------------------------------------
 Instrucción
 
-Quiero que actúes como un docente experto en JavaScript, capaz de explicar profundamente cómo funciona el operador typeof, sus limitaciones, sus casos especiales y su importancia real dentro del lenguaje. Tu explicación debe incluir teoría detallada, ejemplo codificable, análisis línea por línea, errores comunes, advertencias importantes y un caso de estudio que muestre por qué typeof puede generar confusión incluso en programadores avanzados.
+Quiero que actúes como un docente experto en {{lenProgramacion}}, capaz de explicar profundamente cómo funciona el operador typeof, sus limitaciones, sus casos especiales y su importancia real dentro del lenguaje. Tu explicación debe incluir teoría detallada, ejemplo codificable, análisis línea por línea, errores comunes, advertencias importantes y un caso de estudio que muestre por qué typeof puede generar confusión incluso en programadores avanzados.
 Debes explicar por qué a veces typeof devuelve resultados inesperados, por qué ciertos tipos primitivos son difíciles de detectar y cómo se debe usar correctamente en situaciones reales.
 
 Contexto
 
-Soy un estudiante de JavaScript y he usado typeof desde mis primeros ejercicios, pero muchas veces me encuentro con resultados que simplemente no entiendo. Por ejemplo, ¿por qué typeof null devuelve "object" si null es un tipo primitivo? ¿Por qué un array también devuelve "object" si claramente no es lo mismo que un objeto normal?
-Todo esto me genera dudas fuertes sobre cómo JavaScript representa los datos por dentro y cómo funciona realmente su sistema de tipos. Siento que typeof debería ser una herramienta sencilla, pero en la práctica me doy cuenta de que tiene comportamientos extraños que necesito comprender de forma profunda.
+Soy un estudiante de {{lenProgramacion}} y he usado typeof desde mis primeros ejercicios, pero muchas veces me encuentro con resultados que simplemente no entiendo. Por ejemplo, ¿por qué typeof null devuelve "object" si null es un tipo primitivo? ¿Por qué un array también devuelve "object" si claramente no es lo mismo que un objeto normal?
+Todo esto me genera dudas fuertes sobre cómo {{lenProgramacion}} representa los datos por dentro y cómo funciona realmente su sistema de tipos. Siento que typeof debería ser una herramienta sencilla, pero en la práctica me doy cuenta de que tiene comportamientos extraños que necesito comprender de forma profunda.
 
 Entrada
 
-Explícame cómo funciona el operador typeof en JavaScript de forma extensa, profunda y pedagógica.
+Explícame cómo funciona el operador typeof en {{lenProgramacion}} de forma extensa, profunda y pedagógica.
 
 
 Salida
@@ -418,19 +420,19 @@ Devuelve "symbol".
 ------------------------------------------------------------
 Instrucción
 
-Actúa como un docente experto en programación y explícame profundamente cómo funcionan los operadores aritméticos en JavaScript.
+Actúa como un docente experto en programación y explícame profundamente cómo funcionan los operadores aritméticos en {{lenProgramacion}}.
 Debes desarrollar la explicación con teoría detallada, ejemplos codificables, análisis línea por línea, advertencias, notas especiales y un caso real donde estos operadores afectan cálculos importantes como precios, porcentajes o totales.
 Quiero que expliques cada operador aritmético: suma, resta, multiplicación, división, módulo y exponentes.
 
 Contexto
 
-Estoy aprendiendo JavaScript y aunque creo entender la suma y la resta, aún me cuesta visualizar cómo funcionan la división, el módulo y la exponenciación dentro del lenguaje.
+Estoy aprendiendo {{lenProgramacion}} y aunque creo entender la suma y la resta, aún me cuesta visualizar cómo funcionan la división, el módulo y la exponenciación dentro del lenguaje.
 He visto operaciones que dan resultados inesperados (como divisiones con decimales extraños), y a veces no sé por qué el operador % devuelve el residuo o por qué el operador ** es preferible a otros métodos.
 Necesito entender estos operadores a profundidad, ya que son fundamentales en cálculos reales: precios finales, impuestos, porcentajes, conversiones, operaciones matemáticas básicas y lógicas de juegos o aplicaciones.
 
 Entrada
 
-Explícame detalladamente cómo funcionan los operadores aritméticos en JavaScript.
+Explícame detalladamente cómo funcionan los operadores aritméticos en {{lenProgramacion}}.
 
 Salida
 
@@ -506,12 +508,12 @@ Resultado → 81.
 ------------------------------------------------------------
 Instrucción
 
-Quiero que actúes como un docente experto en JavaScript, con dominio absoluto de la lógica booleana y de cómo funciona el sistema de truthy y falsy en el lenguaje. Debes explicarme profundamente los operadores lógicos: AND (&&), OR (||) y NOT (!), cubriendo teoría, aplicaciones reales, ejemplos codificables, análisis línea por línea, advertencias, errores comunes y situaciones en las que los operadores lógicos no funcionan como un principiante esperaría.
+Quiero que actúes como un docente experto en {{lenProgramacion}}, con dominio absoluto de la lógica booleana y de cómo funciona el sistema de truthy y falsy en el lenguaje. Debes explicarme profundamente los operadores lógicos: AND (&&), OR (||) y NOT (!), cubriendo teoría, aplicaciones reales, ejemplos codificables, análisis línea por línea, advertencias, errores comunes y situaciones en las que los operadores lógicos no funcionan como un principiante esperaría.
 Tu explicación debe mostrar tanto el uso de estos operadores para evaluar condiciones como su comportamiento especial cuando se utilizan con valores no booleanos.
 
 Contexto
 
-Como estudiante de JavaScript, entiendo de manera superficial que los operadores lógicos sirven para trabajar con condiciones. Pero cuando empiezo a escribir código real, me doy cuenta de que no entiendo verdaderamente cómo funcionan.
+Como estudiante de {{lenProgramacion}}, entiendo de manera superficial que los operadores lógicos sirven para trabajar con condiciones. Pero cuando empiezo a escribir código real, me doy cuenta de que no entiendo verdaderamente cómo funcionan.
 Por ejemplo:
 
 No sé por qué true && false es false.
@@ -525,7 +527,7 @@ Siento que estoy usando estos operadores de memoria, sin entenderlos. Necesito u
 
 Entrada
 
-Explícame profundamente cómo funcionan los operadores lógicos en JavaScript, teoría y análisis detallado.
+Explícame profundamente cómo funcionan los operadores lógicos en {{lenProgramacion}}, teoría y análisis detallado.
 
 Salida
 
@@ -547,7 +549,7 @@ Caso de estudio aplicado
 
 
  ```js
-let resultadoAND = true && "JavaScript";
+let resultadoAND = true && "{{lenProgramacion}}";
 let resultadoOR = "" || "Valor alternativo";
 let resultadoNOT = !0;
 let mezcla = 5 && 0 && "Hola";
@@ -558,13 +560,13 @@ console.log(resultadoAND, resultadoOR, resultadoNOT, mezcla, cortoCircuito);
 ```
 
 Explicación Línea por Línea
-let resultadoAND = true && "JavaScript";
+let resultadoAND = true && "{{lenProgramacion}}";
 
 El operador AND (&&) devuelve el primer valor falsy, o si todos son truthy, devuelve el último.
 
-true es truthy → entonces devuelve "JavaScript".
+true es truthy → entonces devuelve "{{lenProgramacion}}".
 
-Resultado: "JavaScript".
+Resultado: "{{lenProgramacion}}".
 
 let resultadoOR = "" || "Valor alternativo";
 
@@ -621,12 +623,12 @@ Ejemplo: "0" es truthy, "false" es truthy, {} es truthy.
 ------------------------------------------------------------
 Instrucción
 
-Quiero que actúes como un profesor de JavaScript con un dominio profundo de cómo funciona la comparación en el lenguaje. Debes explicarme la diferencia entre comparación débil (==) y comparación estricta (===), así como los operadores >, <, >=, <=, !=, !==, incluyendo casos especiales, conversión implícita, errores comunes y ejemplos claros.
+Quiero que actúes como un profesor de {{lenProgramacion}} con un dominio profundo de cómo funciona la comparación en el lenguaje. Debes explicarme la diferencia entre comparación débil (==) y comparación estricta (===), así como los operadores >, <, >=, <=, !=, !==, incluyendo casos especiales, conversión implícita, errores comunes y ejemplos claros.
 Necesito una explicación extensa y pedagógica para comprender realmente cuándo usar cada operador y por qué la comparación estricta es más segura.
 
 Contexto
 
-Estoy aprendiendo JavaScript, pero constantemente me confundo con las comparaciones. No entiendo por qué:
+Estoy aprendiendo {{lenProgramacion}}, pero constantemente me confundo con las comparaciones. No entiendo por qué:
 
 5 == "5" es true
 
@@ -636,11 +638,11 @@ false == 0 es true
 
 pero luego false === 0 es false
 Todo esto me parece muy extraño.
-Me doy cuenta de que JavaScript hace conversiones internas cuando uso ==, y eso me causa resultados inesperados. Necesito entender qué pasa exactamente dentro del lenguaje y cómo comparar valores correctamente sin depender de la intuición.
+Me doy cuenta de que {{lenProgramacion}} hace conversiones internas cuando uso ==, y eso me causa resultados inesperados. Necesito entender qué pasa exactamente dentro del lenguaje y cómo comparar valores correctamente sin depender de la intuición.
 
 Entrada
 
-Explícame profundamente cómo funcionan los operadores de comparación en JavaScript, incluyendo la diferencia entre comparación débil y estricta.
+Explícame profundamente cómo funcionan los operadores de comparación en {{lenProgramacion}}, incluyendo la diferencia entre comparación débil y estricta.
 
 Salida
 
@@ -716,18 +718,18 @@ Tipos diferentes → false.
 ------------------------------------------------------------
 Instrucción
 
-Quiero que actúes como un docente experto en JavaScript y me expliques con absoluta profundidad, claridad y estructura la diferencia entre las tres formas de declarar variables: var, let y const. Tu explicación debe profundizar en temas como scope (alcance), hoisting, reasignación, redeclaración, temporal dead zone, características internas, casos de uso, buenas prácticas modernas y peligros comunes.
-Necesito que desarrolles una explicación que no solo diga qué hace cada una, sino por qué existen, cómo funcionan internamente en el motor de JavaScript y cómo afectan el comportamiento del código en situaciones reales.
+Quiero que actúes como un docente experto en {{lenProgramacion}} y me expliques con absoluta profundidad, claridad y estructura la diferencia entre las tres formas de declarar variables: var, let y const. Tu explicación debe profundizar en temas como scope (alcance), hoisting, reasignación, redeclaración, temporal dead zone, características internas, casos de uso, buenas prácticas modernas y peligros comunes.
+Necesito que desarrolles una explicación que no solo diga qué hace cada una, sino por qué existen, cómo funcionan internamente en el motor de {{lenProgramacion}} y cómo afectan el comportamiento del código en situaciones reales.
 
 Contexto
 
-Soy un estudiante aprendiendo JavaScript y todavía me confunde entender cuándo debo usar var, let o const. He visto que algunas personas dicen que var es “peligroso”, pero no sé por qué. También he escuchado términos como “hoisting”, “scope de función”, “scope de bloque”, “temporal dead zone”, pero no los comprendo.
+Soy un estudiante aprendiendo {{lenProgramacion}} y todavía me confunde entender cuándo debo usar var, let o const. He visto que algunas personas dicen que var es “peligroso”, pero no sé por qué. También he escuchado términos como “hoisting”, “scope de función”, “scope de bloque”, “temporal dead zone”, pero no los comprendo.
 Cuando intento escribir código, uso lo que sea que recuerdo sin saber realmente cuál es la opción correcta. Esto me genera errores, comportamientos inesperados y dudas al leer código de otros desarrolladores.
 Quiero una explicación extensa, profunda y profesional que me deje claro cómo funcionan estas tres palabras clave.
 
 Entrada
 
-Explícame profundamente la diferencia entre var, let y const en JavaScript, con teoría, análisis detallado.
+Explícame profundamente la diferencia entre var, let y const en {{lenProgramacion}}, con teoría, análisis detallado.
 
 Salida
 
@@ -826,7 +828,7 @@ Acceder a una variable let antes de declararla produce error, no undefined.
 ------------------------------------------------------------
 Instrucción
 
-Actúa como un docente experto en JavaScript y explícame profundamente qué son los Template Strings (template literals). Necesito que desarrolles teoría, sintaxis, características avanzadas, interpolación, saltos de línea, expresiones dentro de plantillas, beneficios, casos reales y diferencias con la concatenación tradicional.
+Actúa como un docente experto en {{lenProgramacion}} y explícame profundamente qué son los Template Strings (template literals). Necesito que desarrolles teoría, sintaxis, características avanzadas, interpolación, saltos de línea, expresiones dentro de plantillas, beneficios, casos reales y diferencias con la concatenación tradicional.
 Debe ser una explicación larga, completa, profesional y pedagógica, acompañada de ejemplos reales y análisis línea por línea.
 
 Contexto
@@ -837,7 +839,7 @@ Quiero aprenderlos a profundidad para mejorar la calidad y legibilidad de mi có
 
 Entrada
 
-Explícame profundamente qué son los template strings en JavaScript con teoría,  análisis detallado.
+Explícame profundamente qué son los template strings en {{lenProgramacion}} con teoría,  análisis detallado.
 
 Salida
 
@@ -919,7 +921,7 @@ Son estándar moderno del lenguaje.
 ------------------------------------------------------------
 Instrucción
 
-Quiero que actúes como un docente experto en JavaScript y me expliques a profundidad cómo funcionan los operadores de asignación del lenguaje. Debes cubrir el operador básico =, así como todas sus variantes: +=, -=, *=, /=, %= y **=. Tu explicación debe ser pedagógica, técnica y extensa, mostrando cómo cada uno transforma el valor de una variable.
+Quiero que actúes como un docente experto en {{lenProgramacion}} y me expliques a profundidad cómo funcionan los operadores de asignación del lenguaje. Debes cubrir el operador básico =, así como todas sus variantes: +=, -=, *=, /=, %= y **=. Tu explicación debe ser pedagógica, técnica y extensa, mostrando cómo cada uno transforma el valor de una variable.
 Necesito teoría completa, ejemplos reales, casos prácticos, errores comunes, advertencias y un ejemplo codificable con análisis línea por línea.
 
 Contexto
@@ -938,7 +940,7 @@ Necesito una explicación extensa y que me deje claro cuándo usar estos operado
 
 Entrada
 
-Explícame profundamente cómo funcionan los operadores de asignación en JavaScript con teoría,  análisis técnico.
+Explícame profundamente cómo funcionan los operadores de asignación en {{lenProgramacion}} con teoría,  análisis técnico.
 
 Salida
 
@@ -1018,11 +1020,11 @@ console.log(puntos);
 Resultado final → 0.
 
 
-# PROMP 12 — Objetos en JavaScript 
+# PROMP 12 — Objetos en {{lenProgramacion}} 
 ------------------------------------------------------------
 Instrucción
 
-Quiero que actúes como un docente experto y expliques de manera profunda qué son los objetos en JavaScript, incluyendo su estructura interna, cómo funcionan las propiedades, cómo se accede a ellas, cómo se modifican y cómo se eliminan.
+Quiero que actúes como un docente experto y expliques de manera profunda qué son los objetos en {{lenProgramacion}}, incluyendo su estructura interna, cómo funcionan las propiedades, cómo se accede a ellas, cómo se modifican y cómo se eliminan.
 Necesito teoría avanzada, ejemplos reales, casos modernos, explicación de notación de punto, notación de corchetes, mutabilidad, referencias en memoria y errores comunes.
 
 Contexto
@@ -1032,7 +1034,7 @@ También me confunde cuándo usar corchetes y cuándo usar el punto. Quiero ente
 
 Entrada
 
-Explícame profundamente qué son los objetos en JavaScript y cómo funcionan con teoría, análisis detallado.
+Explícame profundamente qué son los objetos en {{lenProgramacion}} y cómo funcionan con teoría, análisis detallado.
 
 Salida
 
@@ -1106,7 +1108,7 @@ Resultado: { edad: 26, activo: false }
 ------------------------------------------------------------
 Instrucción
 
-Actúa como un docente experto en JavaScript y explícame qué son los métodos dentro de un objeto. Necesito que desarrolles una explicación completa sobre cómo funcionan, qué papel tienen dentro de la programación orientada a objetos en JS, cómo utilizan el contexto this, y por qué son fundamentales para modelar comportamientos dentro de estructuras de datos.
+Actúa como un docente experto en {{lenProgramacion}} y explícame qué son los métodos dentro de un objeto. Necesito que desarrolles una explicación completa sobre cómo funcionan, qué papel tienen dentro de la programación orientada a objetos en JS, cómo utilizan el contexto this, y por qué son fundamentales para modelar comportamientos dentro de estructuras de datos.
 
 Contexto
 
@@ -1115,7 +1117,7 @@ Quiero entender esto de manera profunda, clara y práctica.
 
 Entrada
 
-Explícame qué son los métodos dentro de un objeto en JavaScript, cómo funcionan, cómo se invocan y cómo utilizan this.
+Explícame qué son los métodos dentro de un objeto en {{lenProgramacion}}, cómo funcionan, cómo se invocan y cómo utilizan this.
 
 Salida
 
@@ -1168,11 +1170,11 @@ persona.cumplirAnios() aumenta la edad.
 Volver a llamar persona.saludar() muestra el cambio aplicado.
 
 
-# PROMP 14 — Arrays en JavaScript
+# PROMP 14 — Arrays en {{lenProgramacion}}
 ------------------------------------------------------------
 Instrucción
 
-Actúa como docente experto y explícame qué son los arrays en JavaScript, cómo funcionan, cómo se manipulan y por qué son tan importantes en la programación moderna. Necesito teoría, ejemplos prácticos, métodos principales y una explicación línea por línea.
+Actúa como docente experto y explícame qué son los arrays en {{lenProgramacion}}, cómo funcionan, cómo se manipulan y por qué son tan importantes en la programación moderna. Necesito teoría, ejemplos prácticos, métodos principales y una explicación línea por línea.
 
 Contexto
 
@@ -1238,7 +1240,7 @@ Muestra el array final y los valores removidos.
 ------------------------------------------------------------
 Instrucción
 
-Actúa como un docente experto en JavaScript y explícame profundamente cómo funcionan los métodos map, filter y reduce. Quiero que detalles qué hace cada uno, para qué sirven, cómo transforman un array y cuál es su propósito real dentro de la programación funcional moderna.
+Actúa como un docente experto en {{lenProgramacion}} y explícame profundamente cómo funcionan los métodos map, filter y reduce. Quiero que detalles qué hace cada uno, para qué sirven, cómo transforman un array y cuál es su propósito real dentro de la programación funcional moderna.
 
 Contexto
 
@@ -1302,7 +1304,7 @@ Resultado → 15.
 ------------------------------------------------------------
 Instrucción
 
-Explícame cómo funcionan los principales bucles de JavaScript: for, while, for…of y for…in.
+Explícame cómo funcionan los principales bucles de {{lenProgramacion}}: for, while, for…of y for…in.
 Quiero teoría completa, ejemplos claros y análisis detallado.
 
 Contexto
@@ -1405,7 +1407,7 @@ Recorre propiedades de objetos.
 ------------------------------------------------------------
 Instrucción
 
-Actúa como un docente experto en JavaScript y explícame la diferencia entre funciones declaradas y funciones expresadas, incluyendo cómo funcionan, cómo se ejecutan, qué diferencias internas tienen en cuanto al hoisting y por qué es importante entenderlas al desarrollar código limpio y profesional.
+Actúa como un docente experto en {{lenProgramacion}} y explícame la diferencia entre funciones declaradas y funciones expresadas, incluyendo cómo funcionan, cómo se ejecutan, qué diferencias internas tienen en cuanto al hoisting y por qué es importante entenderlas al desarrollar código limpio y profesional.
 
 Contexto
 
@@ -1471,7 +1473,7 @@ Es útil para funciones que deseas tratar como valores.
 ------------------------------------------------------------
 Instrucción
 
-Actúa como docente experto y explícame profundamente cómo funcionan las arrow functions en JavaScript: sintaxis, reglas especiales, el comportamiento de this, cuándo usarlas y cuándo no.
+Actúa como docente experto y explícame profundamente cómo funcionan las arrow functions en {{lenProgramacion}}: sintaxis, reglas especiales, el comportamiento de this, cuándo usarlas y cuándo no.
 
 Contexto
 
@@ -1537,11 +1539,11 @@ this.nombre será undefined porque no apunta al objeto.
 ------------------------------------------------------------
 Instrucción
 
-Actúa como un docente experto en JavaScript y explícame claramente la diferencia entre parámetros y argumentos, cómo funcionan dentro de una función, cómo se pasan valores, qué ocurre si no se envían argumentos suficientes y por qué estos conceptos son esenciales para escribir funciones reutilizables.
+Actúa como un docente experto en {{lenProgramacion}} y explícame claramente la diferencia entre parámetros y argumentos, cómo funcionan dentro de una función, cómo se pasan valores, qué ocurre si no se envían argumentos suficientes y por qué estos conceptos son esenciales para escribir funciones reutilizables.
 
 Contexto
 
-Como estudiante, me confunde mucho el tema de “parámetros vs argumentos”. A veces veo funciones con varios parámetros, pero cuando las llamo, si olvido enviar un valor, el resultado es undefined. También he visto que JavaScript permite más argumentos de los necesarios, y no sé cómo se manejan.
+Como estudiante, me confunde mucho el tema de “parámetros vs argumentos”. A veces veo funciones con varios parámetros, pero cuando las llamo, si olvido enviar un valor, el resultado es undefined. También he visto que {{lenProgramacion}} permite más argumentos de los necesarios, y no sé cómo se manejan.
 Necesito entender este concepto con ejemplos claros y aplicados.
 
 Entrada
@@ -1601,13 +1603,13 @@ Pensar que parámetros y argumentos son lo mismo (no lo son).
 
 Olvidar enviar argumentos → produce valores undefined.
 
-Enviar argumentos de más → JavaScript los ignora a menos que uses ...rest.
+Enviar argumentos de más → {{lenProgramacion}} los ignora a menos que uses ...rest.
 
 # PROMP 20 — Parámetros por Defecto
 ------------------------------------------------------------
 Instrucción
 
-Actúa como docente experto en JavaScript y explícame cómo funcionan los parámetros por defecto, cuándo usarlos, por qué existen y cómo ayudan a evitar valores undefined dentro de las funciones.
+Actúa como docente experto en {{lenProgramacion}} y explícame cómo funcionan los parámetros por defecto, cuándo usarlos, por qué existen y cómo ayudan a evitar valores undefined dentro de las funciones.
 
 Contexto
 
@@ -1663,7 +1665,7 @@ Ambos parámetros toman los valores por defecto.
 ------------------------------------------------------------
 Instrucción
 
-Actúa como un docente experto en JavaScript y explícame cómo funciona el operador spread (...), para qué sirve, qué problemas resuelve y cómo se usa tanto en arrays como en objetos. Incluye teoría, ejemplos claros y explicación línea por línea.
+Actúa como un docente experto en {{lenProgramacion}} y explícame cómo funciona el operador spread (...), para qué sirve, qué problemas resuelve y cómo se usa tanto en arrays como en objetos. Incluye teoría, ejemplos claros y explicación línea por línea.
 
 Contexto
 
@@ -1726,7 +1728,7 @@ Actúa como docente experto y explícame cómo funcionan los rest parameters, cu
 
 Contexto
 
-Me confunde que el mismo símbolo ... del spread también se use para agrupar valores. No entiendo cómo diferencia JavaScript cuándo está expandiendo y cuándo está agrupando. Necesito entenderlo con claridad.
+Me confunde que el mismo símbolo ... del spread también se use para agrupar valores. No entiendo cómo diferencia {{lenProgramacion}} cuándo está expandiendo y cuándo está agrupando. Necesito entenderlo con claridad.
 
 Entrada
 
@@ -1772,7 +1774,7 @@ Resultado final → 15.
 ------------------------------------------------------------
 Instrucción
 
-Actúa como un docente experto en JavaScript y explícame cómo funciona la desestructuración de arrays, para qué sirve, cómo facilita el código, y cuáles son sus formas más comunes. Incluye teoría clara, un ejemplo práctico, explicación línea por línea, advertencias y un caso aplicado.
+Actúa como un docente experto en {{lenProgramacion}} y explícame cómo funciona la desestructuración de arrays, para qué sirve, cómo facilita el código, y cuáles son sus formas más comunes. Incluye teoría clara, un ejemplo práctico, explicación línea por línea, advertencias y un caso aplicado.
 
 Contexto
 
@@ -1789,7 +1791,7 @@ Quiero comprender cómo funciona, qué ventajas tiene y cómo usarla correctamen
 
 Entrada
 
-Explícame qué es la desestructuración de arrays en JavaScript y cómo utilizarla correctamente.
+Explícame qué es la desestructuración de arrays en {{lenProgramacion}} y cómo utilizarla correctamente.
 
 Salida
 
@@ -1850,7 +1852,7 @@ Muestra los resultados de cada desestructuración.
 ------------------------------------------------------------
 Instrucción
 
-Actúa como un docente experto en JavaScript y explícame cómo funciona la desestructuración de objetos, cómo se usa correctamente, cómo renombrar propiedades, cómo usar valores por defecto y por qué es una técnica fundamental en JavaScript moderno.
+Actúa como un docente experto en {{lenProgramacion}} y explícame cómo funciona la desestructuración de objetos, cómo se usa correctamente, cómo renombrar propiedades, cómo usar valores por defecto y por qué es una técnica fundamental en {{lenProgramacion}} moderno.
 
 Contexto
 
@@ -1921,21 +1923,21 @@ console.log(...)
 
 Muestra todas las variables obtenidas.
 
-# PROMP 25 — JSON: Qué es y cómo se usa en JavaScript
+# PROMP 25 — JSON: Qué es y cómo se usa en {{lenProgramacion}}
 ------------------------------------------------------------
 Instrucción
 
-Actúa como un docente experto en JavaScript y explícame qué es JSON, cómo funciona, cuál es su estructura, cómo se convierte desde y hacia JavaScript, y para qué se utiliza en aplicaciones reales. Incluye teoría clara, ejemplo codificable, explicación línea por línea y advertencias importantes.
+Actúa como un docente experto en {{lenProgramacion}} y explícame qué es JSON, cómo funciona, cuál es su estructura, cómo se convierte desde y hacia {{lenProgramacion}}, y para qué se utiliza en aplicaciones reales. Incluye teoría clara, ejemplo codificable, explicación línea por línea y advertencias importantes.
 
 Contexto
 
 Como estudiante, he escuchado mucho el término JSON, sobre todo cuando se habla de APIs, bases de datos, backend, peticiones HTTP, etc.
-Pero todavía no entiendo del todo qué es, cómo está estructurado y por qué JavaScript lo maneja tan fácilmente.
+Pero todavía no entiendo del todo qué es, cómo está estructurado y por qué {{lenProgramacion}} lo maneja tan fácilmente.
 También me confunde cuándo usar JSON.stringify y cuándo usar JSON.parse.
 
 Entrada
 
-Explícame qué es JSON, cómo se usa en JavaScript y cómo convertir objetos a JSON y JSON a objetos.
+Explícame qué es JSON, cómo se usa en {{lenProgramacion}} y cómo convertir objetos a JSON y JSON a objetos.
 
 Salida
 
@@ -1958,7 +1960,7 @@ console.log(objeto);
 Explicación Línea por Línea
 let usuario = { ... }
 
-Creamos un objeto de JavaScript con propiedades típicas.
+Creamos un objeto de {{lenProgramacion}} con propiedades típicas.
 
 let json = JSON.stringify(usuario);
 
@@ -1973,7 +1975,7 @@ Ejemplo del resultado:
 
 let objeto = JSON.parse(json);
 
-Convierte el texto JSON nuevamente a un objeto JavaScript real.
+Convierte el texto JSON nuevamente a un objeto {{lenProgramacion}} real.
 
 console.log(json)
 
@@ -1988,7 +1990,7 @@ Imprime el objeto convertido.
 ------------------------------------------------------------
 Instrucción
 
-Actúa como docente experto en JavaScript y explícame cómo funciona el manejo de errores con try…catch, cuándo usarlo, cómo capturar errores, cómo manejar errores asincrónicos y cómo usar finally. Incluye teoría y ejemplo.
+Actúa como docente experto en {{lenProgramacion}} y explícame cómo funciona el manejo de errores con try…catch, cuándo usarlo, cómo capturar errores, cómo manejar errores asincrónicos y cómo usar finally. Incluye teoría y ejemplo.
 
 Contexto
 
@@ -2051,11 +2053,11 @@ dividir(10, 2) funciona normalmente.
 
 dividir(10, 0) activa el error → pasa al catch.
 
-# PROMP 27 — Asincronía en JavaScript (Concepto General)
+# PROMP 27 — Asincronía en {{lenProgramacion}} (Concepto General)
 ------------------------------------------------------------
 Instrucción
 
-Actúa como docente experto en JavaScript y explícame profundamente qué es la asincronía, por qué existe en el lenguaje, cómo funciona el event loop, y cómo permite que JavaScript maneje múltiples tareas sin bloquear la ejecución.
+Actúa como docente experto en {{lenProgramacion}} y explícame profundamente qué es la asincronía, por qué existe en el lenguaje, cómo funciona el event loop, y cómo permite que {{lenProgramacion}} maneje múltiples tareas sin bloquear la ejecución.
 
 Contexto
 
@@ -2064,7 +2066,7 @@ Necesito una explicación clara que me ayude a entender todo desde la base.
 
 Entrada
 
-Explícame qué es la asincronía en JavaScript con teoría y ejemplo.
+Explícame qué es la asincronía en {{lenProgramacion}} con teoría y ejemplo.
 
 Salida
 
@@ -2096,7 +2098,7 @@ No se ejecuta de inmediato.
 
 Se programa para ejecutarse después de 2 segundos.
 
-JavaScript continúa sin esperar.
+{{lenProgramacion}} continúa sin esperar.
 
 console.log("Fin");
 
@@ -2106,7 +2108,7 @@ Se imprime antes del mensaje asincrónico.
 ------------------------------------------------------------
 Instrucción
 
-Actúa como docente experto en JavaScript y explícame qué es una Promise, para qué sirve, cómo funciona su ciclo interno y cuáles son sus estados: pending, fulfilled, rejected. Incluye teoría clara, ejemplo real y análisis completo.
+Actúa como docente experto en {{lenProgramacion}} y explícame qué es una Promise, para qué sirve, cómo funciona su ciclo interno y cuáles son sus estados: pending, fulfilled, rejected. Incluye teoría clara, ejemplo real y análisis completo.
 
 Contexto
 
@@ -2115,7 +2117,7 @@ No entiendo cómo funcionan, cuándo se resuelven, qué significa .then() y .cat
 
 Entrada
 
-Explícame profundamente qué son las promesas en JavaScript y cómo se utilizan.
+Explícame profundamente qué son las promesas en {{lenProgramacion}} y cómo se utilizan.
 
 Salida
 
@@ -2182,7 +2184,7 @@ rejected → ocurrió un error
 ------------------------------------------------------------
 Instrucción
 
-Actúa como un docente experto en JavaScript y explícame cómo funcionan async y await, por qué existen, cómo simplifican el manejo de promesas, y por qué permiten escribir código asincrónico con una estructura más parecida al código síncrono.
+Actúa como un docente experto en {{lenProgramacion}} y explícame cómo funcionan async y await, por qué existen, cómo simplifican el manejo de promesas, y por qué permiten escribir código asincrónico con una estructura más parecida al código síncrono.
 
 Contexto
 
@@ -2246,11 +2248,11 @@ ejecutar();
 
 Llamamos la función asincrónica.
 
-# PROMP 30 — Módulos en JavaScript (import / export)
+# PROMP 30 — Módulos en {{lenProgramacion}} (import / export)
 ------------------------------------------------------------
 Instrucción
 
-Actúa como un docente experto y explícame cómo funcionan los módulos en JavaScript, por qué existen, cómo usar import y export, qué son los módulos ES6, por qué ayudan a organizar proyectos y cuál es la diferencia entre exportaciones por defecto y exportaciones nombradas.
+Actúa como un docente experto y explícame cómo funcionan los módulos en {{lenProgramacion}}, por qué existen, cómo usar import y export, qué son los módulos ES6, por qué ayudan a organizar proyectos y cuál es la diferencia entre exportaciones por defecto y exportaciones nombradas.
 
 Contexto
 

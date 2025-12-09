@@ -1,22 +1,77 @@
-# yaml-language-server: $schema=https://promptfoo.dev/config-schema.json
+﻿# yaml-language-server: $schema=https://promptfoo.dev/config-schema.json
 description: 'Getting started'
 # Optionally set API keys here instead of exporting environment variables.
 # Never commit real keys to source control.
 env:
-  GEMINI_API_KEY: AIzaSyAwHzzjc1LI1CsD4wLH7x9C_xlXXFu-PyI
+  GEMINI_API_KEY: AIzaSyCAzaq5unNviH0xKCEk4h-PJSpmAyQFzCU
 
 prompts:
-  - "../30 Promp Arreglados.txt"
+  - "../30 Promp Arreglados.md"
 
 providers:
-  - google:gemini-2.5-pro
+  - google:gemini-2.5-flash
   # Add more models if you want to compare:
   # - openai:gpt-4.1-mini
   # - anthropic:claude-3-haiku
 
 tests:
-  - vars:
-      input: "Hello world"
-      language: "French"
-
-
+  - vars: { lenProgramacion: "JavaScript" }
+    assert: [{ type: contains, value: "programador:" }]
+  - vars: { lenProgramacion: "TypeScript" }
+    assert: [{ type: contains, value: "programador:" }]
+  - vars: { lenProgramacion: "Python" }
+    assert: [{ type: contains, value: "programador:" }]
+  - vars: { lenProgramacion: "Go" }
+    assert: [{ type: contains, value: "programador:" }]
+  - vars: { lenProgramacion: "Rust" }
+    assert: [{ type: contains, value: "programador:" }]
+  - vars: { lenProgramacion: "C#" }
+    assert: [{ type: contains, value: "programador:" }]
+  - vars: { lenProgramacion: "Java" }
+    assert: [{ type: contains, value: "programador:" }]
+  - vars: { lenProgramacion: "Kotlin" }
+    assert: [{ type: contains, value: "programador:" }]
+  - vars: { lenProgramacion: "Swift" }
+    assert: [{ type: contains, value: "programador:" }]
+  - vars: { lenProgramacion: "PHP" }
+    assert: [{ type: contains, value: "programador:" }]
+  - vars: { lenProgramacion: "Ruby" }
+    assert: [{ type: contains, value: "programador:" }]
+  - vars: { lenProgramacion: "Scala" }
+    assert: [{ type: contains, value: "programador:" }]
+  - vars: { lenProgramacion: "Perl" }
+    assert: [{ type: contains, value: "programador:" }]
+  - vars: { lenProgramacion: "Elixir" }
+    assert: [{ type: contains, value: "programador:" }]
+  - vars: { lenProgramacion: "Clojure" }
+    assert: [{ type: contains, value: "programador:" }]
+  - vars: { lenProgramacion: "R" }
+    assert: [{ type: contains, value: "programador:" }]
+  - vars: { lenProgramacion: "MATLAB" }
+    assert: [{ type: contains, value: "programador:" }]
+  - vars: { lenProgramacion: "Lua" }
+    assert: [{ type: contains, value: "programador:" }]
+  - vars: { lenProgramacion: "Haskell" }
+    assert: [{ type: contains, value: "programador:" }]
+  - vars: { lenProgramacion: "OCaml" }
+    assert: [{ type: contains, value: "programador:" }]
+  - vars: { lenProgramacion: "SQL" }
+    assert: [{ type: contains, value: "programador:" }]
+  - vars: { lenProgramacion: "PL/pgSQL" }
+    assert: [{ type: contains, value: "programador:" }]
+  - vars: { lenProgramacion: "NoSQL" }
+    assert: [{ type: contains, value: "programador:" }]
+  - vars: { lenProgramacion: "Bash" }
+    assert: [{ type: contains, value: "programador:" }]
+  - vars: { lenProgramacion: "Powershell" }
+    assert: [{ type: contains, value: "programador:" }]
+  - vars: { lenProgramacion: "Assembly" }
+    assert: [{ type: contains, value: "programador:" }]
+  - vars: { lenProgramacion: "COBOL" }
+    assert: [{ type: contains, value: "programador:" }]
+  - vars: { lenProgramacion: "Fortran" }
+    assert: [{ type: contains, value: "programador:" }]
+  - vars: { lenProgramacion: "APL" }
+    assert: [{ type: contains, value: "programador:" }]
+  - vars: { lenProgramacion: "Scratch" }
+    assert: [{ type: contains, value: "programador:" }]
